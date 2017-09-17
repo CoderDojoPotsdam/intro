@@ -23,6 +23,7 @@
         <div class="show-language-heading">{{ language.name | escape }}</div>
         {% include structure.html structure=page.structure %}
       </div>
-    {%- endfor -%}
+    {%- endfor %}
+    {% include footer.html %}
   </body>
 </html>

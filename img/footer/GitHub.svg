@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="120"
+   height="120"
+   viewBox="0 0 120 119.99999"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="GitHub.svg">
+  <title
+     id="title4170">GitHub</title>
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="4"
+     inkscape:cx="18.651679"
+     inkscape:cy="64.112032"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:object-nodes="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1005"
+     inkscape:window-x="-9"
+     inkscape:window-y="1071"
+     inkscape:window-maximized="1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     units="px" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>GitHub</dc:title>
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-265.76758,-169.45117)">
+    <path
+       style="color:#000000;clip-rule:nonzero;display:inline;overflow:visible;visibility:visible;opacity:1;isolation:auto;mix-blend-mode:normal;color-interpolation:sRGB;color-interpolation-filters:linearRGB;solid-color:#000000;solid-opacity:1;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;color-rendering:auto;image-rendering:auto;shape-rendering:auto;text-rendering:auto;enable-background:accumulate"
+       d="M 59.75 -0.25 A 60 60 0 0 0 -0.25 59.75 A 60 60 0 0 0 59.75 119.75 A 60 60 0 0 0 119.75 59.75 A 60 60 0 0 0 59.75 -0.25 z M 59.75 9.75 A 50 50 0 0 1 109.75 59.75 A 50 50 0 0 1 73.078125 107.9375 C 72.771654 107.5094 72.478691 107.03953 72.228516 106.47852 C 72.905316 101.42523 75.290329 91.082448 69.068359 82.361328 C 102.80645 82.040008 92.249271 47.177576 86.550781 44.447266 C 87.267291 42.974176 88.958259 36.092934 86.130859 31.177734 C 81.656259 30.547384 78.04703 32.409266 72.4375 36.441406 C 65.82755 32.810906 47.548857 34.734276 47.373047 36.441406 C 46.845186 36.39847 38.932989 30.6094 34.919922 31.011719 C 34.346627 31.069193 33.851903 31.252598 33.470703 31.597656 C 29.187093 35.481306 32.309243 44.188221 33.470703 44.550781 C 25.451643 53.035651 21.437302 79.104714 50.638672 82.677734 C 48.993292 84.316204 48.069119 86.747266 47.574219 89.472656 C 34.629019 93.080716 34.850298 83.201319 27.335938 79.730469 C 25.994838 79.111029 24.013332 79.718434 23.044922 80.833984 C 22.090212 81.933754 25.04904 83.138718 26.46875 84.580078 C 32.7651 90.972478 28.967705 98.083773 47.078125 96.695312 C 47.124325 100.39275 47.489884 103.89792 47.583984 106.16211 C 47.171764 106.8576 46.763626 107.41321 46.365234 107.87305 A 50 50 0 0 1 9.75 59.75 A 50 50 0 0 1 59.75 9.75 z "
+       transform="translate(265.76758,169.45117)"
+       id="rect4141" />
+  </g>
+</svg>

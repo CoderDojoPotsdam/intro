@@ -13,6 +13,6 @@
 {%- endfor -%}
 {%- if translated == false -%}
   <a class="translation" href="{{ include.href }}">
-    {%- include lang.html text=include.text %}
+    {%- include lang.html text=include.text -%}
   </a>
 {%- endif -%}
