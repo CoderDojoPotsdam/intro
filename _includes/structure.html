@@ -1,0 +1,7 @@
+
+<div class="structure">
+  Structure: {{ include.structure | jsonify }}
+  {% for entry in include.structure %}
+    {% include entry.html entry=entry %}
+  {% endfor %}
+</div>

@@ -1,0 +1,84 @@
+#
+# Each tutorial should have a lowercase name
+#
+lightbot:
+  title: Lightbot
+  # todo: image
+  description:
+    de: Steuere einen kleinen Roboter, der den Boden anleuchten möchte.
+  url: http://lightbot.com/hour-of-code.html
+  links:
+  - name: Online
+    url: http://lightbot.com/flash.html
+  - name: iOS
+    url: http://lightbot.com/redirect-ios-codehour.html
+  - name: Android
+    url: http://lightbot.com/redirect-android-codehour.html
+  tags:
+  - symbols
+  - hour-of-code
+  - offline
+  # todo offline link
+spritebox:
+  title: SpriteBox
+  description:
+    de: Steuere deine Figur durch die eine Welt. Manchmal kommst du nicht weiter. Da hilft dir ein Elf, dem du sagst, wo er Erde hinmachen soll, damit du höher kommst.
+    # todo: en
+  url: http://spritebox.com/flash.html
+  tags:
+  - symbols
+# todo: ScratchJr
+blockly:
+  title:
+    de: Blockly-Spiele
+    en: Blockly Games
+  description:
+    de: Puzzle, navigiere durch ein Labyrinth oder bewege Vögel - mit Blockly lernst du die Grundlagen der Programmierung.
+    # todo: en
+  url:
+    de: https://blockly-games.appspot.com/?lang=de
+    en: https://blockly-games.appspot.com/?lang=en
+  links:
+  - name: Labyrinth
+    url: 
+      de: https://blockly-games.appspot.com/maze?lang=de
+      en: https://blockly-games.appspot.com/maze?lang=en
+  tags:
+  - blocks
+code.org:
+  title: code.org
+  description:
+    de: Minecraft, Star Wars, Anna und Elsa, Angry Birds, Flappy Bird - lerne Programmieren, indem du Rätsel löst.
+  url: https://code.org/learn
+  tags:
+  - blocks
+appinventor:
+  title: App Inventor
+  description:
+    de: Erstelle eigene Andriod Apps. Es gibt eine Reihe von Tutorials, die du benutzen kannst.
+  url: http://appinventor.mit.edu/
+  links:
+  - name: Hour of Code Tutorial
+    url: http://tinyurl.com/AI-tutorial-untertitel
+  tags:
+  - blocks
+codecombat:
+  title: Code Combat
+  description:
+    de: Renne mit deinem Helden durch ein Verlies und bekämpfe Oger.
+  url: https://codecombat.com/
+  tags:
+  - syntax
+  - python
+  - javascript
+  - lua
+  - coffeescript
+waterloo:
+  title: Waterloo Tutorial
+  url:
+    en: https://cscircles.cemc.uwaterloo.ca/en/
+    de: https://cscircles.cemc.uwaterloo.ca/de/
+  description:
+    de: Das Waterloo-Tutorial führt auf unterscheidliche Weisen in Python ein und geht auf übliche Fehler ein. Es wird vom BWINF empfohlen.
+  tags:
+  - python

@@ -1,0 +1,11 @@
+<div class="entry">
+  {% if entry.name %}
+    {% assign entry_name = entry.name %}
+  {% else %}
+    {% assign entry_name = entry %}
+  {% endif %}
+  <div class="heading">{{ entry_name | escape }}</div>
+  {% if entry.structure %}
+    {% include structure.html structure=entry.structure %}
+  {% endif %}
+</div>

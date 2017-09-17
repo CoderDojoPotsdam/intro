@@ -1,0 +1,16 @@
+---
+---
+<html>
+  <head>
+    <meta http-equiv="refresh" content="2">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8">
+  </head>
+  <body>
+    <img src="{{ page.image | escape }}"/>
+    <h1>{{ page.title | escape }}</h1>
+    {{ page.content }}
+    {{ page | jsonify }}
+    {% include structure.html structure=page.structure %}
+  </body>
+</html>

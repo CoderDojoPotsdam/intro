@@ -1,0 +1,30 @@
+programming-languages:
+  python:
+    name: Python
+    url: https://python.org/
+    description:
+      de: Python is eine Allzweckprogramiersprache.
+skills:
+  symbols:
+    name:
+      de: Symbole
+      en: Symbols
+    description:
+      de: Weder lesen noch Schreiben - lerne Programmieren mit Symbolen
+      en: Neither reading nor writing - learn programming with symbols.
+  blocks:
+    name:
+      de: Blöcke
+      en: Blocks
+    description:
+      de: Schreibe eigene Programme, indem du Blöcke zusammen steckst.    
+      en: Write your own programs by plugging building blocks together.
+  syntax:
+    name:
+      de: Syntax
+      en: Syntax
+    description:
+      en: In text based programming you write your program with the keyboard.
+      de: In textbasierten Programmiersprachen schreibst du dein Programm mit der Tastatur.
+    
+  
