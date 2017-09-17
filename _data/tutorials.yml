@@ -27,7 +27,17 @@ spritebox:
   url: http://spritebox.com/flash.html
   tags:
   - symbols
-# todo: ScratchJr
+scratchjr:
+  title: Scratch JR
+  description:
+    de: Erstelle eigene interaktive Geschichten und Videos mit der App.
+    en: Create own interactive stories and videos with this app.
+  url: http://www.scratchjr.org/
+  links:
+  - name:
+      de: Info Sphere
+      en:
+    url: http://schuelerlabor.informatik.rwth-aachen.de/modulmaterialien/scratchjr
 blockly:
   title:
     de: Blockly-Spiele
