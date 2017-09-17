@@ -1,0 +1,13 @@
+<div class="category grid-whole padded equalize">
+  {%- assign category_id = include.structure.id -%}
+  {%- assign category = site.data.categories[category_id] %}
+  <div class="heading">
+    {%- include lang.html text=category.name -%}
+  </div>
+  <div class="description">
+    {%- include lang.html text=category.description %}
+  </div>
+  {%- if include.structure.structure %}
+    {% include structure.html structure=include.structure.structure %}
+  {%- endif %}
+</div>

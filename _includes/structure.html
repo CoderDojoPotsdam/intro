@@ -1,7 +1,9 @@
-
-<div class="structure">
-  Structure: {{ include.structure | jsonify }}
-  {% for entry in include.structure %}
-    {% include entry.html entry=entry %}
-  {% endfor %}
+<div class="structure grid-whole padded equalize">
+  {%- for entry in include.structure -%}
+    {%- if entry.id %}
+      {% include category.html structure=entry -%}
+    {%- else %}
+      {% include tutorial.html structure=entry -%}
+    {%- endif -%}
+  {%- endfor %}
 </div>

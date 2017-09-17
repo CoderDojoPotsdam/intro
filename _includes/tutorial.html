@@ -1,0 +1,13 @@
+<div class="tutorial s-grid-whole m-grid-half l-grid-third padded equalize">
+  {%- assign tutorial_id = include.structure -%}
+  {%- assign tutorial = site.data.tutorials[tutorial_id] %}
+  <div class="heading">
+    {%- include lang-link.html text=tutorial.title href=tutorial.url -%}
+  </div>
+  <div class="description">
+    {%- include lang.html text=tutorial.description %}
+  </div>
+  {%- if structure.structure %}
+    {% include structure.html structure=structure.structure %}
+  {%- endif %}
+</div>

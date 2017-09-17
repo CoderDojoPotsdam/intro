@@ -1,0 +1,18 @@
+{%- assign translated = false -%}
+{%- for language in site.data.languages -%}
+  {%- if include.href[language.id] -%}
+    {%- assign translated = true -%}
+    <a class="translation translation-{{ language.id | escape }}" href="{{ include.href[language.id] | escape }}">
+      {%- if include.text[language.id] -%}
+        {{- include.text[language.id] -}}
+      {%- else -%}
+        {{- include.text -}}
+      {%- endif -%}
+    </a>
+  {%- endif -%}
+{%- endfor -%}
+{%- if translated == false -%}
+  <a class="translation" href="{{ include.href }}">
+    {%- include lang.html text=include.text %}
+  </a>
+{%- endif -%}

@@ -2,15 +2,27 @@
 ---
 <html>
   <head>
-    <meta http-equiv="refresh" content="2">
+    <meta http-equiv="refresh" content="5">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta charset="UTF-8">
+    <link href="css/overview.css" rel="stylesheet"/>
+    <link href="css/fonts.css" rel="stylesheet"/>
+    <link href="css/grid.css" rel="stylesheet"/>
   </head>
   <body>
-    <img src="{{ page.image | escape }}"/>
-    <h1>{{ page.title | escape }}</h1>
+    <div class="header">
+      <img class="page-logo" src="{{ page.image | escape }}"/>
+      <span class="page-title">{{ page.title | escape }}</span>
+      {%- for language in site.data.languages %}
+        <a class="language-link" href="#section-{{ language.id | escape }}">{{ language.name | escape }}</a>
+      {%- endfor %}
+    </div>
     {{ page.content }}
-    {{ page | jsonify }}
-    {% include structure.html structure=page.structure %}
+    {%- for language in site.data.languages -%}
+      <div class="show-language show-language-{{ language.id | escape }} grid-whole padded equalize" id="section-{{ language.id | escape }}">
+        <div class="show-language-heading">{{ language.name | escape }}</div>
+        {% include structure.html structure=page.structure %}
+      </div>
+    {%- endfor -%}
   </body>
 </html>

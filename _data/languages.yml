@@ -1,5 +1,5 @@
-de:
+- id: de
   name: Deutsch
   # TODO: add flag
-en:
+- id: en
   name: English
