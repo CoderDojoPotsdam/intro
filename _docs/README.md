@@ -64,7 +64,7 @@ Then, you can translate [tutorials][tutorials] and
 If you want to add a new page, you can copy an existing one.
 Here is an example for an `overview` page.
 
-```
+```yaml
 ---
 layout: overview
 image: https://raw.githubusercontent.com/CoderDojoPotsdam/organize/master/logo/logo-256.png
@@ -89,16 +89,16 @@ Each element in the structure starts with a `-`.
 Each element in the structure can be either
 
 - a tutorial, which is marked by the tutorial id, e.g.
-  ```
+  ```yaml
   - lightbot
   ```
 - a category, in which case the we write 
-  ```
+  ```yaml
   - category: symbols
   ```
   Each category can have a `structure` attribute which allows to embed more tutorials or categories.
   This example opens the category "symbols" and adds the tutorial `lightbot` to it.
-  ```
+  ```yaml
   - category: symbols
     structure:
     - lightbot
