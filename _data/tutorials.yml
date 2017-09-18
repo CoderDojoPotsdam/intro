@@ -14,7 +14,7 @@ lightbot:
     url: http://lightbot.com/redirect-ios-codehour.html
   - name: Android
     url: http://lightbot.com/redirect-android-codehour.html
-  tags:
+  categories:
   - symbols
   - hour-of-code
   - offline
@@ -25,7 +25,7 @@ spritebox:
     de: Steuere deine Figur durch die eine Welt. Manchmal kommst du nicht weiter. Da hilft dir ein Elf, dem du sagst, wo er Erde hinmachen soll, damit du höher kommst.
     # todo: en
   url: http://spritebox.com/flash.html
-  tags:
+  categories:
   - symbols
 scratchjr:
   title: Scratch JR
@@ -38,6 +38,9 @@ scratchjr:
       de: Info Sphere
       en:
     url: http://schuelerlabor.informatik.rwth-aachen.de/modulmaterialien/scratchjr
+  categories:
+  - android
+  - ios
 blockly:
   title:
     de: Blockly-Spiele
@@ -53,14 +56,14 @@ blockly:
     url: 
       de: https://blockly-games.appspot.com/maze?lang=de
       en: https://blockly-games.appspot.com/maze?lang=en
-  tags:
+  categories:
   - blocks
 code.org:
   title: code.org
   description:
     de: Minecraft, Star Wars, Anna und Elsa, Angry Birds, Flappy Bird - lerne Programmieren, indem du Rätsel löst.
   url: https://code.org/learn
-  tags:
+  categories:
   - blocks
 appinventor:
   title: App Inventor
@@ -70,14 +73,14 @@ appinventor:
   links:
   - name: Hour of Code Tutorial
     url: http://tinyurl.com/AI-tutorial-untertitel
-  tags:
+  categories:
   - blocks
 codecombat:
   title: Code Combat
   description:
     de: Renne mit deinem Helden durch ein Verlies und bekämpfe Oger.
   url: https://codecombat.com/
-  tags:
+  categories:
   - syntax
   - python
   - javascript
@@ -90,5 +93,5 @@ waterloo:
     de: https://cscircles.cemc.uwaterloo.ca/de/
   description:
     de: Das Waterloo-Tutorial führt auf unterscheidliche Weisen in Python ein und geht auf übliche Fehler ein. Es wird vom BWINF empfohlen.
-  tags:
+  categories:
   - python
