@@ -2,25 +2,33 @@ symbols:
   name:
     de: Symbole
     en: Symbols
+    es: Símbolos
   description:
     de: Weder lesen noch Schreiben - lerne Programmieren mit Symbolen
     en: Neither reading nor writing - learn programming with symbols.
+    es: No hace falta leer or escribir - aprender a programar con símbolos
 blocks:
   name:
     de: Blöcke
     en: Blocks
+    es: Bloques
   description:
     de: Schreibe eigene Programme, indem du Blöcke zusammen steckst.    
     en: Write your own programs by plugging building blocks together.
+    es: Escribe tus propios programas juntando bloques.
 syntax:
   name:
     de: Syntax
     en: Syntax
+    es: Sintaxis
   description:
     en: In text based programming you write your program with the keyboard.
     de: In textbasierten Programmiersprachen schreibst du dein Programm mit der Tastatur.
+    es: En lenguajes de programación basados en texto, tú escribes tu programa con el teclado.
 python:
   name: Python
   url: https://python.org/
   description:
     de: Python is eine Allzweckprogramiersprache.
+    en: Python is an all purpose programming language.
+    es: Python es un potente lenguaje de programación que se puede usar para muchas cosas 

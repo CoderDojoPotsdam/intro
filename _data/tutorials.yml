@@ -6,6 +6,7 @@ lightbot:
   # todo: image
   description:
     de: Steuere einen kleinen Roboter, der den Boden anleuchten möchte.
+    es: Da instrucciones a un pequeño robot que quiere iluminar baldosas en el suelo.
   url: http://lightbot.com/hour-of-code.html
   links:
   - name: Online
@@ -32,6 +33,7 @@ scratchjr:
   description:
     de: Erstelle eigene interaktive Geschichten und Videos mit der App.
     en: Create own interactive stories and videos with this app.
+    es: Esta aplicación te permite crear tus propias historias interactivas.
   url: http://www.scratchjr.org/
   links:
   - name:
@@ -51,24 +53,30 @@ blockly:
   url:
     de: https://blockly-games.appspot.com/?lang=de
     en: https://blockly-games.appspot.com/?lang=en
+    es: https://blockly-games.appspot.com/?lang=es
   links:
   - name: Labyrinth
     url: 
       de: https://blockly-games.appspot.com/maze?lang=de
       en: https://blockly-games.appspot.com/maze?lang=en
+      es: https://blockly-games.appspot.com/maze?lang=en
   categories:
   - blocks
 code.org:
   title: code.org
   description:
     de: Minecraft, Star Wars, Anna und Elsa, Angry Birds, Flappy Bird - lerne Programmieren, indem du Rätsel löst.
+    en: Minecraft, Star Wars, Anna and Elsa, Angry Birds, Flappy Bird - lerne Programmieren, indem du Rätsel löst.
+    es: Minecraft, Star Wars, Anna y Elsa, Angry Birds, Flappy Bird - aprende a programar resolviendo acertijos.
   url: https://code.org/learn
   categories:
   - blocks
 appinventor:
   title: App Inventor
   description:
-    de: Erstelle eigene Andriod Apps. Es gibt eine Reihe von Tutorials, die du benutzen kannst.
+    de: Erstelle eigene Android Apps. Es gibt eine Reihe von Tutorials, die du benutzen kannst.
+    en: Create your own Android Apps. There are several tutorials that you can use.
+    es: Crea tus propias aplicaciones en Android. Haz varios tutoriales que puedes utilizar para aprender.
   url: http://appinventor.mit.edu/
   links:
   - name: Hour of Code Tutorial
@@ -91,7 +99,10 @@ waterloo:
   url:
     en: https://cscircles.cemc.uwaterloo.ca/en/
     de: https://cscircles.cemc.uwaterloo.ca/de/
+    es: https://cscircles.cemc.uwaterloo.ca/es/
   description:
     de: Das Waterloo-Tutorial führt auf unterscheidliche Weisen in Python ein und geht auf übliche Fehler ein. Es wird vom BWINF empfohlen.
+    en: This tutorial from the University of Waterloo(Canada) has an introduction to Python, including typical failures.
+    es: Este tutorial de la Universidad de Waterloo (Canadá) contiene una introducción a Python, incluyendo errores frecuentes.
   categories:
   - python
