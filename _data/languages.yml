@@ -3,3 +3,5 @@
   # TODO: add flag
 - id: en
   name: English
+- id: es
+  name: Español
