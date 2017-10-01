@@ -12,3 +12,5 @@ You can update this folder using these commands:
     git clone https://github.com/cdpoffline/blockly-games.git _blocky-games/
     _blockly-games/bin/update.sh
     mv _blocky-games/web/* .
+
+When you commit, make sure not to add all languages as this requires a lot of space.
