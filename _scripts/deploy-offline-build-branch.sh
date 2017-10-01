@@ -35,6 +35,8 @@ rm -r temp
   echo "$id_rsa" > id_rsa
   chmod 600 id_rsa
   echo "Push to $REMOTE"
-  ssh-agent bash -c "ssh-add id_rsa; git push --set-upstream \"$REMOTE\" \"$BRANCH\""
+  git remote set-url origin "$REMOTE"
+  git remote -v
+  ssh-agent bash -c "ssh-add id_rsa; git push --set-upstream origin \"$BRANCH\""
   rm -r .git
 )
