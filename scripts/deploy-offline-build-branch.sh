@@ -22,6 +22,7 @@ cp -r .git temp
 (
   set -e
   cd temp
+  git fetch origin "$BRANCH"
   git checkout "$BRANCH"
 )
 mv temp/.git "$OFFLINE_BUILD_FOLDER"
