@@ -3,6 +3,7 @@
 set -e
 
 BRANCH="offline-build"
+REMOTE="git@github.com:CoderDojoPotsdam/intro.git"
 
 if ! [ -n "$id_rsa" ]; then
   echo "You should set the variable id_rsa to contain a valid ssh deploy key to origin."
@@ -33,6 +34,6 @@ rm -r temp
   git commit -am"Automated build $TRAVIS_BUILD_NUMBER"
   echo "$id_rsa" > id_rsa
   chmod 600 id_rsa
-  ssh-agent bash -c "ssh-add id_rsa; git push --set-upstream origin \"$BRANCH\""
+  ssh-agent bash -c "ssh-add id_rsa; git push --set-upstream \"$REMOTE\" \"$BRANCH\""
   rm -r .git
 )
