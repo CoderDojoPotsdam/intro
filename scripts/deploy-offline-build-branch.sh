@@ -32,6 +32,7 @@ rm -r temp
   git add --all .
   git commit -am"Automated build $TRAVIS_BUILD_NUMBER"
   echo "$id_rsa" > id_rsa
+  chmod 600 id_rsa
   ssh-agent bash -c "ssh-add id_rsa; git push --set-upstream origin \"$BRANCH\""
   rm -r .git
 )
