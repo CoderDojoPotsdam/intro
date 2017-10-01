@@ -1,0 +1,10 @@
+/*
+ * This css file deactivates all the offline supported links.
+ *
+ */
+
+.offline {
+  display: none;
+}
+
+@import url("../offline/activate.css");
