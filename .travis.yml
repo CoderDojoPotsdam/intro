@@ -9,7 +9,7 @@ script:
   - echo "Build online version"
   - jekyll build
   - echo "Build offline version"
-  - git fetch origin offline
+  - git fetch origin "+offline:offline"
   - mkdir offline
   - cp -r .git offline
   - ( cd offline && git checkout offline )
