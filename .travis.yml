@@ -17,7 +17,7 @@ script:
 deploy:
   provider: script
   skip_cleanup: true
-  script: scripts/deploy-offline-build-branch.sh
+  script: _scripts/deploy-offline-build-branch.sh
   file_glob: true
   on:
     branch: issue-17-offline-support
