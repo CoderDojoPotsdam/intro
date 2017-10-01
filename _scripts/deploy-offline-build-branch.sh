@@ -32,6 +32,6 @@ rm -r temp
   echo "Commit offline version into branch \"$BRANCH\""
   git add --all .
   git commit -am"Automated build $TRAVIS_BUILD_NUMBER"
-  git push -f -q "$REMOTE" "$BRANCH" &2> /dev/null
-  rm -r .git
+  git push -f -q "$REMOTE-$BRANCH" "$BRANCH" 2> /dev/null
+  rm -rf .git
 )
