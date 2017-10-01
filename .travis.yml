@@ -16,6 +16,7 @@ script:
   - jekyll build --destination "$OFFLINE_BUILD_FOLDER"
 deploy:
   provider: script
+  skip_cleanup: true
   script: scripts/deploy-offline-build-branch.sh
   file_glob: true
   on:
