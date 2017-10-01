@@ -6,6 +6,7 @@ env:
 install:
   - gem install github-pages
 script:
+  - git fetch
   - echo "Build online version"
   - jekyll build
   - echo "Build offline version"
