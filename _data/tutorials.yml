@@ -11,6 +11,9 @@ lightbot:
   links:
   - name: Online
     url: http://lightbot.com/flash.html
+  - name: Offline
+    url: offline/lightbot
+    offline: true
   - name: iOS
     url: http://lightbot.com/redirect-ios-codehour.html
   - name: Android
@@ -18,7 +21,6 @@ lightbot:
   categories:
   - symbols
   - hour-of-code
-  - offline
   # todo offline link
 spritebox:
   title: SpriteBox
@@ -70,7 +72,7 @@ blockly:
     es: https://blockly-games.appspot.com/?lang=es
   links:
   - name: Labyrinth
-    url: 
+    url:
       de: https://blockly-games.appspot.com/maze?lang=de
       en: https://blockly-games.appspot.com/maze?lang=en
       es: https://blockly-games.appspot.com/maze?lang=es
