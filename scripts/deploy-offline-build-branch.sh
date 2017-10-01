@@ -34,6 +34,6 @@ rm -r temp
   echo "Commit offline version into branch \"$BRANCH\""
   git add --all .
   git commit -am"Automated build $TRAVIS_BUILD_NUMBER"
-  git push
+  git push --set-upstream origin "$BRANCH"
   rm -r .git
 )
