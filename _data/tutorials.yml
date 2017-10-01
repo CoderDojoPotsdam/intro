@@ -59,9 +59,11 @@ blockly:
   title:
     de: Blockly-Spiele
     en: Blockly Games
+    es: Juegos con Blockly
   description:
     de: Puzzle, navigiere durch ein Labyrinth oder bewege Vögel - mit Blockly lernst du die Grundlagen der Programmierung.
-    # todo: en
+    en: Blockly Games is a series of educational games that teach programming. It is designed for children who have not had prior experience with computer programming.
+    es: Blockly Games es una serie de juegos educativos creados por Google para enseñar conceptos de programación.
   url:
     de: https://blockly-games.appspot.com/?lang=de
     en: https://blockly-games.appspot.com/?lang=en
@@ -71,7 +73,7 @@ blockly:
     url: 
       de: https://blockly-games.appspot.com/maze?lang=de
       en: https://blockly-games.appspot.com/maze?lang=en
-      es: https://blockly-games.appspot.com/maze?lang=en
+      es: https://blockly-games.appspot.com/maze?lang=es
   categories:
   - blocks
 code.org:
