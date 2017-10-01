@@ -13,3 +13,9 @@ script:
   - cp -r .git offline
   - ( cd offline && git checkout offline )
   - jekyll build --destination "$OFFLINE_BUILD_FOLDER"
+deploy:
+  provider: script
+  script: scripts/deploy-offline-build-branch.sh
+  file_glob: true
+  on:
+    branch: issue-17-offline-support
