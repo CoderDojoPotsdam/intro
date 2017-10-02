@@ -30,6 +30,7 @@ rm -r temp
   set -e
   cd "$OFFLINE_BUILD_FOLDER"
   echo "Commit offline version into branch \"$BRANCH\""
+  git checkout README.md # do not commit the change in the readme as we want to document the branch
   git add --all .
   if git commit -am"Automated build $TRAVIS_BUILD_NUMBER"; then
     git push -f -q "$REMOTE" "$BRANCH:$BRANCH"
