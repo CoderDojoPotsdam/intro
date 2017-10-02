@@ -3,6 +3,7 @@ rvm:
   - 2.1
 env:
   - OFFLINE_BUILD_FOLDER=intro
+  - OFFLINE_FOLDER="$OFFLINE_BUILD_FOLDER/offline"
 install:
   - gem install github-pages
 script:
@@ -10,9 +11,9 @@ script:
   - jekyll build
   - echo "Build offline version"
   - git fetch origin "+offline:offline"
-  - mkdir offline
-  - cp -r .git offline
-  - ( cd offline && git checkout offline )
+  - mkdir "$OFFLINE_FOLDER"
+  - cp -r .git "$OFFLINE_FOLDER"
+  - ( cd "$OFFLINE_FOLDER" && git checkout offline )
   - jekyll build --destination "$OFFLINE_BUILD_FOLDER"
 deploy:
   provider: script
