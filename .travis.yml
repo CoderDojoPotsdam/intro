@@ -2,8 +2,9 @@ language: ruby
 rvm:
   - 2.1
 env:
-  - OFFLINE_BUILD_FOLDER=intro
-  - OFFLINE_FOLDER="$OFFLINE_BUILD_FOLDER/offline"
+  global:
+    - OFFLINE_BUILD_FOLDER=intro
+    - OFFLINE_FOLDER="$OFFLINE_BUILD_FOLDER/offline"
 install:
   - gem install github-pages
 script:
