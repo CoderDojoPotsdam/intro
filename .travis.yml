@@ -12,7 +12,7 @@ script:
   - jekyll build
   - echo "Build offline version"
   - git fetch origin "+offline:offline"
-  - mkdir "$OFFLINE_FOLDER"
+  - mkdir -p "$OFFLINE_FOLDER"
   - cp -r .git "$OFFLINE_FOLDER"
   - ( cd "$OFFLINE_FOLDER" && git checkout offline )
   - jekyll build --destination "$OFFLINE_BUILD_FOLDER"
