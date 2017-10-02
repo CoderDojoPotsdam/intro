@@ -1,6 +1,7 @@
 # intro
 
 [![Join the chat at https://gitter.im/CoderDojoPotsdam/intro](https://badges.gitter.im/CoderDojoPotsdam/intro.svg)][gitter]
+
 Das ist die neue Introseite der CoderDojo Materialien
 
 - [CoderDojo Potsdam](potsdam.html)
