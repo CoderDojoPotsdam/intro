@@ -14,6 +14,9 @@ lightbot:
   - name: Offline
     url: offline/lightbot
     offline: true
+  - name: Download
+    url: offline/lightbot.zip
+    offline: true
   - name: iOS
     url: http://lightbot.com/redirect-ios-codehour.html
   - name: Android
@@ -71,6 +74,11 @@ blockly:
     en: https://blockly-games.appspot.com/?lang=en
     es: https://blockly-games.appspot.com/?lang=es
   links:
+  - name: Offline
+    url:
+      de: offline/blockly-games/index-de.html
+      en: offline/blockly-games/index-de.html
+      de: offline/blockly-games/index-de.html
   - name: Labyrinth
     url:
       de: https://blockly-games.appspot.com/maze?lang=de
