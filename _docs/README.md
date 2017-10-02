@@ -149,7 +149,7 @@ links:
 
 You can also add an offline link to a file stored in the
 [offline branch][offline-branch].
-Offline links are only displayed if the offline verison is generated, see above.
+Offline links are only displayed if the offline version is generated, see above.
 
 Here, you can see that we add an offline link
 to the [lightbot/index.html][offline-branch-lightbot] file:
@@ -161,6 +161,16 @@ to the [lightbot/index.html][offline-branch-lightbot] file:
     url: offline/lightbot/index.html
     offline: true
 ```
+
+In the [offline branch][offline-branch], follow this to add an offline content:
+
+- Create a new folder.
+- Create a README.md file which describes what you did to create the folder.
+  This should include download links, context information, scripts, ... .
+  The goal is to update this after some years when you are not around,
+  so please add everything you can.
+- Add the necessary files.
+
 
 [new-issue]: https://github.com/CoderDojoPotsdam/intro/issues/new
 [edit-tutorials]: https://github.com/CoderDojoPotsdam/intro/edit/master/_data/tutorials.yml
