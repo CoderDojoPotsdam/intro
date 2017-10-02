@@ -12,10 +12,10 @@ lightbot:
   - name: Online
     url: http://lightbot.com/flash.html
   - name: Offline
-    url: offline/lightbot
+    url: offline/lightbot/index.html
     offline: true
   - name: Download
-    url: offline/lightbot.zip
+    url: offline/lightbot/lightbot.zip
     offline: true
   - name: iOS
     url: http://lightbot.com/redirect-ios-codehour.html
