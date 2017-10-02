@@ -9,8 +9,14 @@
   </div>
   {%- if tutorial.links -%}
     {%- for link in tutorial.links -%}
+      {%- if link.offline -%}
+        <span class="offline">
+      {%- endif -%}
       {%- include lang-link.html text=link.name href=link.url -%}
       {%- if forloop.last -%}{%- else %} | {% endif -%}
+      {%- if link.offline -%}
+        </span>
+      {%- endif -%}
     {% endfor -%}
   {%- endif -%}
 </div>

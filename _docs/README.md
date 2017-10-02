@@ -57,7 +57,7 @@ lightbot:
 
 If you like to translate a tutorial to different languages,
 first, check that your language is in the [list of languages][languages]. If not, add it.
-Then, you can translate [tutorials][tutorials] and 
+Then, you can translate [tutorials][tutorials] and
 
 ## How to add a web page
 
@@ -92,7 +92,7 @@ Each element in the structure can be either
   ```yaml
   - lightbot
   ```
-- a category, in which case the we write 
+- a category, in which case the we write
   ```yaml
   - category: symbols
   ```
@@ -104,7 +104,80 @@ Each element in the structure can be either
     - lightbot
   ```
 
+
+## How to use the offline version
+
+This website also has an offline version.
+The offline version is updated by [travis][travis] and can be accessed via the [offline-build branch][offline-build].
+
+You can download the [offline version][offline-build-download].
+You can extract it, store it e.g. on a USB device or serve it via a webserver.
+
+To keep your local copy updated, you can install git.
+Then, you clone the repository once:
+
+    git clone --branch offline-build https://github.com/CoderDojoPotsdam/intro.git
+
+Everytime you want to update the local copy, run
+
+    git pull
+
+## How to build the offline version
+
+You can build the offline version.
+To clone the offline material, execute this command:
+
+`git clone --branch offline https://github.com/CoderDojoPotsdam/intro.git _site/offline`
+
+Then, you can run the jekyll command to build and serve the offline website:
+
+`jekyll serve --trace`
+
+Now, your webpage should be available at http://localhost:4000/.
+Notice that some additional links appear which are only available as offline verison.
+
+## How to add offline content
+
+Offline links are supported in the `links` section of a tutorial.
+If your links look like this:
+
+```yaml
+links:
+- name: Online
+  url: http://lightbot.com/flash.html
+```
+
+You can also add an offline link to a file stored in the
+[offline branch][offline-branch].
+Offline links are only displayed if the offline version is generated, see above.
+
+Here, you can see that we add an offline link
+to the [lightbot/index.html][offline-branch-lightbot] file:
+```yaml
+  links:
+  - name: Online
+    url: http://lightbot.com/flash.html
+  - name: Offline
+    url: offline/lightbot/index.html
+    offline: true
+```
+
+In the [offline branch][offline-branch], follow this to add an offline content:
+
+- Create a new folder.
+- Create a README.md file which describes what you did to create the folder.
+  This should include download links, context information, scripts, ... .
+  The goal is to update this after some years when you are not around,
+  so please add everything you can.
+- Add the necessary files.
+
+
 [new-issue]: https://github.com/CoderDojoPotsdam/intro/issues/new
 [edit-tutorials]: https://github.com/CoderDojoPotsdam/intro/edit/master/_data/tutorials.yml
 [tutorials]: https://github.com/CoderDojoPotsdam/intro/blob/master/_data/tutorials.yml
 [languages]: https://github.com/CoderDojoPotsdam/intro/blob/master/_data/languages.yml
+[offline-build]: https://github.com/CoderDojoPotsdam/intro/tree/offline-build
+[offline-build-download]: https://github.com/CoderDojoPotsdam/intro/archive/offline-build.zip
+[travis]: https://travis-ci.org/CoderDojoPotsdam/intro/
+[offline-branch]: https://github.com/CoderDojoPotsdam/intro/tree/offline
+[offline-branch-lightbot]: https://github.com/CoderDojoPotsdam/intro/blob/offline/lightbot/index.html

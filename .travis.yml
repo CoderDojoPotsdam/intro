@@ -1,0 +1,25 @@
+language: ruby
+rvm:
+  - 2.1
+env:
+  global:
+    - OFFLINE_BUILD_FOLDER=intro
+    - OFFLINE_FOLDER="$OFFLINE_BUILD_FOLDER/offline"
+install:
+  - gem install github-pages
+script:
+  - echo "Build online version"
+  - jekyll build
+  - echo "Build offline version"
+  - git fetch origin "+offline:offline"
+  - mkdir -p "$OFFLINE_FOLDER"
+  - cp -r .git "$OFFLINE_FOLDER"
+  - ( cd "$OFFLINE_FOLDER" && git checkout offline )
+  - jekyll build --destination "$OFFLINE_BUILD_FOLDER"
+deploy:
+  provider: script
+  skip_cleanup: true
+  script: _scripts/deploy-offline-build-branch.sh
+  file_glob: true
+  on:
+    branch: master
