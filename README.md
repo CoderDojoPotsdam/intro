@@ -26,14 +26,21 @@ administrator rights.
 Also, either download or clone the offline version of the website.
 
 - [Download]
-- Clone: `git clone --branch offline-build https://github.com/CoderDojoPotsdam/intro.git`
+- Clone:
+  ```shell
+  git clone --depth=1 --branch offline-build \
+            https://github.com/CoderDojoPotsdam/intro.git offline-build
+  ```
+  You will need to replace `path/to/offline-build` with the
+  path to the cloned repository in the following.
 
 Run the server
 --------------
 
 In order to run the server, you can use this command after installation:
 
-    python3 -m intro_offline_server path/to/intro
+    export OFFLINE_BUILD_DIRECTORY=path/to/offline-build
+    python3 -m intro_offline_server
 
 This gives the following output:
 
@@ -58,3 +65,12 @@ If you add a new package to requirements.txt, also run this command:
 
     pip install pip-tools
     pip-compile requirements.txt
+
+For development of the offline features, you can use the following setup:
+
+- folder `intro` - checkout with the server branch
+- folder `intro/intro` checkout with the `master` branch running
+  `jekyll serve --trace` to check the ability of localhost to use the
+  offline links at http://localhost:4000 and
+  `jekyll serve --trace --port 4001 --destination _site-offline`
+- folder `intro/_site-offline/offline` checkout with the `offline` branch

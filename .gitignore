@@ -2,3 +2,4 @@
 /intro
 __pycache__
 *.pyc
+/offline-build
