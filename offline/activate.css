@@ -1,8 +1,12 @@
 /*
  * This css file activates all the offline supported links.
- *
+ * It also deactivates the locahost links.
  */
 
 .offline {
   display: inline;
+}
+
+.local {
+  display: none;
 }
