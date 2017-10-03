@@ -38,5 +38,23 @@ In order to run the server, you can use this command after installation:
 This gives the following output:
 
 ```
-TODO
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
+
+Development
+-----------
+
+If you like to develop on this server, you can install `virtualenv`
+
+    pip3 install --user virtualenv
+
+Setup your python environment:
+
+    virtualenv -p python3 ENV
+    source ENV/bin/activate
+    pip install -r requirements.txt
+
+If you add a new package to requirements.txt, also run this command:
+
+    pip install pip-tools
+    pip-compile requirements.txt
