@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/CoderDojoPotsdam/intro.svg?branch=master)](https://travis-ci.org/CoderDojoPotsdam/intro)
 [![Join the chat at https://gitter.im/CoderDojoPotsdam/intro](https://badges.gitter.im/CoderDojoPotsdam/intro.svg)][gitter]
 
-Das ist die neue Introseite der CoderDojo Materialien
+This is an introduction site for programming tutorials. It is used by the following CoderDojos:
 
 - [CoderDojo Potsdam](potsdam.html)
 
