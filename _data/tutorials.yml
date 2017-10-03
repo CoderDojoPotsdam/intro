@@ -3,7 +3,6 @@
 #
 lightbot:
   title: Lightbot
-  # todo: image
   description:
     de: Steuere einen kleinen Roboter, der den Boden anleuchten möchte.
     es: Da instrucciones a un pequeño robot que quiere iluminar baldosas en el suelo.
@@ -24,7 +23,7 @@ lightbot:
   categories:
   - symbols
   - hour-of-code
-  # todo offline link
+
 spritebox:
   title: SpriteBox
   description:
@@ -33,6 +32,7 @@ spritebox:
   url: http://spritebox.com/flash.html
   categories:
   - symbols
+
 scratchjr:
   title: Scratch JR
   description:
@@ -48,6 +48,7 @@ scratchjr:
   categories:
   - android
   - ios
+
 scratch:
   title: Scratch
   description:
@@ -60,6 +61,7 @@ scratch:
     url: https://inventwithscratch.com/book/
   categories:
   - blocks
+
 blockly:
   title:
     de: Blockly-Spiele
@@ -87,6 +89,7 @@ blockly:
       es: https://blockly-games.appspot.com/maze?lang=es
   categories:
   - blocks
+
 code.org:
   title: code.org
   description:
@@ -96,6 +99,24 @@ code.org:
   url: https://code.org/learn
   categories:
   - blocks
+
+snap:
+  title: Snap
+  description:
+    de: Baue dein eigenes Spiel oder eine Geschichte, indem du Blöcke zusammen steckst und malst.
+    en: Build your own game or story by painting and pulling building blocks together.
+  url: http://snap.berkeley.edu/index.html
+  links:
+  - name: Online
+    url: http://snap.berkeley.edu/snapsource/snap.html
+  - name: Offline
+    url: offline/snap/index.html
+    offline: true
+  - name: Download
+    url: https://github.com/jmoenig/Snap--Build-Your-Own-Blocks/archive/master.zip
+  categories:
+  - blocks
+
 appinventor:
   title: App Inventor
   description:
@@ -108,6 +129,7 @@ appinventor:
     url: http://tinyurl.com/AI-tutorial-untertitel
   categories:
   - blocks
+
 codecombat:
   title: Code Combat
   description:
@@ -119,6 +141,7 @@ codecombat:
   - javascript
   - lua
   - coffeescript
+
 waterloo:
   title: Waterloo Tutorial
   url:
