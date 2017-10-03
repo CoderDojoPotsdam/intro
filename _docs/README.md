@@ -1,7 +1,7 @@
 # Documentation
 
 This documentation should clarify how to do what you want with this repository.
-If it does not appear here, [please create an issue and ask][new-issue].
+If it does not appear here, [please create an issue and ask][new-issue] or join our [chat on gitter][gitter] to get help.
 
 ## How to create add a tutorial
 
@@ -181,3 +181,4 @@ In the [offline branch][offline-branch], follow this to add an offline content:
 [travis]: https://travis-ci.org/CoderDojoPotsdam/intro/
 [offline-branch]: https://github.com/CoderDojoPotsdam/intro/tree/offline
 [offline-branch-lightbot]: https://github.com/CoderDojoPotsdam/intro/blob/offline/lightbot/index.html
+[gitter]: https://gitter.im/CoderDojoPotsdam/intro
