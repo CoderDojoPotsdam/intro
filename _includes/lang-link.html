@@ -2,7 +2,7 @@
 {%- for language in site.data.languages -%}
   {%- if include.href[language.id] -%}
     {%- assign translated = true -%}
-    <a class="translation translation-{{ language.id | escape }}" href="{{ include.href[language.id] | escape }}">
+    <a class="translation translation-{{ language.id | escape }}" href="{{ include.href_base | default: "" }}{{ include.href[language.id] | escape }}">
       {%- if include.text[language.id] -%}
         {{- include.text[language.id] -}}
       {%- else -%}
@@ -12,7 +12,7 @@
   {%- endif -%}
 {%- endfor -%}
 {%- if translated == false -%}
-  <a class="translation" href="{{ include.href }}">
+  <a class="translation" href="{{ include.href_base | default: "" }}{{ include.href }}">
     {%- include lang.html text=include.text -%}
   </a>
 {%- endif -%}

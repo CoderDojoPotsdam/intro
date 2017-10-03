@@ -14,8 +14,8 @@
           {% include lang-link.html text=link.name href=link.url -%} |
         </span>
         <span class="local">
-          {%- assign local_link = site.local_server | append: "/" | append: link.url -%}
-          {%- include lang-link.html text=link.name href=local_link -%}
+          {%- assign local_link = site.local_server | append: "/" -%}
+          {%- include lang-link.html text=link.name href=link.url href_base=local_link -%}
       {%- else -%}
         <span class="online">
           {% include lang-link.html text=link.name href=link.url -%}
