@@ -13,7 +13,15 @@ they might origin from pull requests.
 - `offline-build` [→ visit][offline-build-branch]  
   To make deployment easy, this branch contains the build website ready to serve.
 
+These are the only branches which should exist in the repository.
+If you create a pull request, please, for maintaining a oversight,
+[fork the repository][fork] and create a pull-request from a branch in your fork.
+You can edit your version and [compare it across forks][compare] to create a
+pull request.
+
 [pages]: https://coderdojopotsdam.github.io/intro/
 [master-branch]: https://github.com/CoderDojoPotsdam/intro/tree/master
 [offline-branch]: https://github.com/CoderDojoPotsdam/intro/tree/offline
 [offline-build-branch]: https://github.com/CoderDojoPotsdam/intro/tree/offline-build
+[fork]: https://github.com/CoderDojoPotsdam/intro/fork
+[compare]: https://github.com/CoderDojoPotsdam/intro/compare
