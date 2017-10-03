@@ -77,8 +77,9 @@ blockly:
   - name: Offline
     url:
       de: offline/blockly-games/index-de.html
-      en: offline/blockly-games/index-de.html
-      de: offline/blockly-games/index-de.html
+      en: offline/blockly-games/index.html
+      es: offline/blockly-games/index.html
+    offline: true
   - name: Labyrinth
     url:
       de: https://blockly-games.appspot.com/maze?lang=de
