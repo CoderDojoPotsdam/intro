@@ -11,12 +11,17 @@
     {%- for link in tutorial.links -%}
       {%- if link.offline -%}
         <span class="offline">
-      {%- endif -%}
-      {%- include lang-link.html text=link.name href=link.url -%}
-      {%- if forloop.last -%}{%- else %} | {% endif -%}
-      {%- if link.offline -%}
+          {% include lang-link.html text=link.name href=link.url -%} |
         </span>
+        <span class="local">
+          {%- assign local_link = site.local_server | append: "/" | append: link.url -%}
+          {%- include lang-link.html text=link.name href=local_link -%}
+      {%- else -%}
+        <span class="online">
+          {% include lang-link.html text=link.name href=link.url -%}
       {%- endif -%}
+      {%- if forloop.last -%}{%- else %} | {% endif %}
+      </span>
     {% endfor -%}
   {%- endif -%}
 </div>
