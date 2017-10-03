@@ -3,3 +3,4 @@ sourcecode:
   root: "https://github.com/CoderDojoPotsdam/intro/blob/master/"
 keep_files:
   - offline
+local_server: "http://localhost:25444"

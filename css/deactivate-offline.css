@@ -1,9 +1,13 @@
 /*
  * This css file deactivates all the offline supported links.
- *
+ * And the local links.
  */
 
 .offline {
+  display: none;
+}
+
+.local {
   display: none;
 }
 
