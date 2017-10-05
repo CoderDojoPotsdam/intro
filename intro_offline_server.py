@@ -11,7 +11,7 @@ app = Flask(__name__, )
 @app.route('/')
 def display(path=""):
     if path.endswith("/") or not path:
-        path += index.html
+        path += "index.html"
     return send_from_directory(OFFLINE_BUILD_DIRECTORY, path)
 
 app.run(debug=True, host='0.0.0.0', port=25444)
