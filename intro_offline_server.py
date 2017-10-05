@@ -134,7 +134,8 @@ def get_announced():
         hostname, address = server[1], server[2]
         if address not in addresses:
             info = address + ("" if address.endswith("/") else "/") + "announce/info"
-            servers.append({"hostname": hostname, "offline": address, "info": info})
+            # TODO: compute an id which can not be faked by hashing secrets
+            servers.append({"hostname": hostname, "offline": address, "info": info, "id": hostname})
         else:
             addresses.add(address)
     result = {"servers": servers, "host": get_info()}
