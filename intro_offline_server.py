@@ -24,7 +24,9 @@ app = Flask(__name__)
 # Serve the folder content if given
 #
 
-if OFFLINE_BUILD_DIRECTORY:
+serving_offline_material = bool(OFFLINE_BUILD_DIRECTORY)
+
+if serving_offline_material:
     @app.route('/<path:path>')
     @app.route('/')
     def display(path=""):
@@ -182,7 +184,8 @@ def announce_loop():
         except:
             traceback.print_exc()
 
-thread = threading.Thread(target=announce_loop, daemon=True)
-thread.start()
+if serving_offline_material:
+    thread = threading.Thread(target=announce_loop, daemon=True)
+    thread.start()
 
 app.run(debug=True, host='::', port=PORT)
