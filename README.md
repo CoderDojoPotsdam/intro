@@ -84,3 +84,17 @@ For development of the offline features, you can use the following setup:
 
 [download]: https://github.com/CoderDojoPotsdam/intro/archive/server.zip
 [startup-script]: https://github.com/CoderDojoPotsdam/CoderDojoOS/tree/master/specials/software/intro
+
+Docker
+------
+
+You can also run and start the docker container:
+
+    docker run --rm -p 25444:25444 coderdojopotsdam/intro
+
+You may want to add this server to the [servers.txt](servers.txt) file if it has
+an external reachability.
+
+To build the container, run
+
+    docker build --tag coderdojopotsdam/intro .
