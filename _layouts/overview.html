@@ -11,11 +11,13 @@
     <link href="css/deactivate-offline.css" rel="stylesheet"/>
     <link href="{{ site.local_server }}/offline/activate_localhost.css" rel="stylesheet"/>
     <link href="offline/activate.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/find_lan_servers.js"></script>
   </head>
   <body>
     <div class="header">
       <img class="page-logo" src="{{ page.image | escape }}"/>
       <span class="page-title">{{ page.title | escape }}</span>
+      <select id="offline-servers" class="invisible" onchange="switchOfflineServer(this)"></select>
       {%- for language in site.data.languages %}
         <a class="language-link" href="#section-{{ language.id | escape }}">{{ language.name | escape }}</a>
       {%- endfor %}
