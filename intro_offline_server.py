@@ -8,7 +8,10 @@ assert OFFLINE_BUILD_DIRECTORY, "Set the OFFLINE_BUILD_DIRECTORY variable to " \
 app = Flask(__name__, )
 
 @app.route('/<path:path>')
-def display(path):
+@app.route('/')
+def display(path=""):
+    if path.endswith("/") or not path:
+        path += index.html
     return send_from_directory(OFFLINE_BUILD_DIRECTORY, path)
 
 app.run(debug=True, host='0.0.0.0', port=25444)
