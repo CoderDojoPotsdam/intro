@@ -25,7 +25,7 @@ administrator rights.
 
 Also, either download or clone the offline version of the website.
 
-- [Download]
+- [Download][download]
 - Clone:
   ```shell
   git clone --depth=1 --branch offline-build \
@@ -47,6 +47,13 @@ This gives the following output:
 ```
  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
 ```
+
+Automated Updated Start
+-----------------------
+
+If you would like to run an updated version of the server,
+have a look at the [intro special][startup-script]:
+You can run this script as root to run an up-to-date version of the server with the updated `offline-build` branch.
 
 Development
 -----------
@@ -74,3 +81,6 @@ For development of the offline features, you can use the following setup:
   offline links at http://localhost:4000 and
   `jekyll serve --trace --port 4001 --destination _site-offline`
 - folder `intro/_site-offline/offline` checkout with the `offline` branch
+
+[download]: https://github.com/CoderDojoPotsdam/intro/archive/server.zip
+[startup-script]: https://github.com/CoderDojoPotsdam/CoderDojoOS/tree/master/specials/software/intro
