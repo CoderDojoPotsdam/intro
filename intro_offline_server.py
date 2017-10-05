@@ -126,14 +126,15 @@ def remove_outdated():
             break
 
 @app.route("/announce", methods=["GET"])
-def get_annournced():
+def get_announced():
     remove_outdated()
     addresses = set()
     servers = []
     for server in announced_servers:
         hostname, address = server[1], server[2]
         if address not in addresses:
-            servers.append({"hostname": server[1], "address": server[2]})
+            info = address + ("" if address.endswith("/") else "/") + "announce/info"
+            servers.append({"hostname": hostname, "offline": address, "info": info})
         else:
             addresses.add(address)
     result = {"servers": servers, "host": get_info()}
