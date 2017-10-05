@@ -3,3 +3,5 @@
 __pycache__
 *.pyc
 /offline-build
+.ipynb_checkpoints
+Untitled.ipynb

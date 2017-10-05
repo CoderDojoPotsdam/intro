@@ -9,4 +9,5 @@ flask==0.12.2
 itsdangerous==0.24
 jinja2==2.9.6
 markupsafe==1.0
+netifaces==0.10.6
 werkzeug==0.12.2
