@@ -12,6 +12,8 @@ they might origin from pull requests.
   of the website.
 - `offline-build` [→ visit][offline-build-branch]  
   To make deployment easy, this branch contains the build website ready to serve.
+- `server` [→ visit][server-branch]  
+  This branch contains a web server which can serve the `offline-branch` contents.
 
 These are the only branches which should exist in the repository.
 If you create a pull request, please, for maintaining a oversight,
@@ -25,3 +27,4 @@ pull request.
 [offline-build-branch]: https://github.com/CoderDojoPotsdam/intro/tree/offline-build
 [fork]: https://github.com/CoderDojoPotsdam/intro/fork
 [compare]: https://github.com/CoderDojoPotsdam/intro/compare
+[server-branch]: https://github.com/CoderDojoPotsdam/intro/tree/server
