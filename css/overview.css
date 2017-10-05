@@ -61,7 +61,7 @@ body {
 }
 
 .show-language-heading {
-  
+
 }
 
 /*******************************************************
@@ -77,7 +77,7 @@ body {
 }
 
 .tutorial > .description {
-  
+
 }
 
 /*******************************************************
@@ -93,11 +93,11 @@ body {
 }
 
 .category > .description {
-  
+
 }
 
 /*******************************************************
- * tutorial
+ * footer
  */
 
 .footer {
@@ -140,4 +140,18 @@ footer .space {
   width: 1em;
   height: 1em;
   display: inline-block;
+}
+
+/*******************************************************
+ * offline servers
+ */
+
+#offline-servers.invisible {
+   display: none;
+ }
+
+#offline-servers {
+  float: right;
+  display: inline-block;
+  padding-right: 0.2em;
 }

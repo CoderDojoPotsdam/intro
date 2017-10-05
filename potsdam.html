@@ -9,11 +9,13 @@
     <link href="css/deactivate-offline.css" rel="stylesheet"/>
     <link href="http://localhost:25444/offline/activate_localhost.css" rel="stylesheet"/>
     <link href="offline/activate.css" rel="stylesheet"/>
+    <script type="text/javascript" src="js/find_lan_servers.js"></script>
   </head>
   <body>
     <div class="header">
       <img class="page-logo" src="img/logos/CoderDojoPotsdam_logo-256.png"/>
       <span class="page-title">CoderDojo Potsdam</span>
+      <select id="offline-servers" class="invisible" onchange="switchOfflineServer(this)"></select>
         <a class="language-link" href="#section-de">Deutsch</a>
         <a class="language-link" href="#section-en">English</a>
         <a class="language-link" href="#section-es">Español</a>
