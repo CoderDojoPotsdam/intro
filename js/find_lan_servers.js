@@ -1,3 +1,11 @@
+/*
+ * This file enables discovery of servers in the LAN.
+ * If you like to add test servers, either run the server from the server branch
+ * and serve content or execute the following to add a server:
+ *
+ *    connectedLanServer({ hostname: "programming", offline: "http://10.137.2.20:25444/", info: "http://10.137.2.20:25444/announce/info", id: "programming" })
+ *
+ */
 
 var REFRESH_LOCAL_SERVERS_AFTER_MILLISECONDS = 30000;
 var SERVERS_LISTING = "https://raw.githubusercontent.com/CoderDojoPotsdam/intro/server/servers.txt";
