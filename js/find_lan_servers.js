@@ -10,6 +10,10 @@
 var REFRESH_LOCAL_SERVERS_AFTER_MILLISECONDS = 30000;
 var SERVERS_LISTING = "https://raw.githubusercontent.com/CoderDojoPotsdam/intro/server/servers.txt";
 
+if (document.location.protocol != "http:") {
+  console.log("NOTICE: an http website is required to detect local servers.");
+}
+
 function httpGetAsync(theUrl, callback)
 {
   // from https://stackoverflow.com/a/4033310/1320237
