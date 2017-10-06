@@ -84,7 +84,13 @@ function switchOfflineServer(select) {
   if (offline[offline.length - 1] == "/" ) {
     offline = offline.slice(0, -1);
   }
-  var url = offline + document.location.pathname;
+  var path = document.location.pathname;
+  if (document.location.hostname == "") {
+    // we are viewing this from the file system
+    path = path.split("/");
+    path = "/" + path[path.length - 1];
+  }
+  var url = offline + path;
   console.log("Switching to offline server " + server.hostname + " at " + url);
   document.location = url;
 }
