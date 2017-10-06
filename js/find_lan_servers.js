@@ -7,7 +7,7 @@
  *
  */
 
-var REFRESH_LOCAL_SERVERS_AFTER_MILLISECONDS = 30000;
+var REFRESH_LOCAL_SERVERS_AFTER_MILLISECONDS = 60000;
 var SERVERS_LISTING = "https://raw.githubusercontent.com/CoderDojoPotsdam/intro/server/servers.txt";
 
 if (document.location.protocol != "http:") {
