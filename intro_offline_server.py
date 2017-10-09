@@ -105,7 +105,10 @@ def allow_javascript_json(data):
 
 @app.route("/announce", methods=["POST"])
 def announe():
-    data = json.loads(request.get_data())
+    data = request.get_data()
+    if isinstance(data, bytes):
+        data = data.decode("UTF-8")
+    data = json.loads(data)
     servers = data["servers"]
     hostname = data["hostname"]
     outdated = time.time() + SECONDS_TO_UNTIL_OUTDATED
