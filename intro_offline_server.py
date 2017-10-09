@@ -1,5 +1,5 @@
 import os
-from flask import Flask, send_from_directory, request, make_response
+from flask import Flask, send_from_directory, request, make_response, redirect
 from concurrent.futures import ThreadPoolExecutor
 import json
 from urllib.parse import urlparse
@@ -90,7 +90,7 @@ def server_is_local(server):
     return is_local_address(host)
 
 
-announced_servers = [] # outdated time, address
+announced_servers = [] # (outdated, hostname, server)
 
 def dumps(data):
     """Dump some json data."""
@@ -163,6 +163,10 @@ def get_info():
         "servers": ["http://{}:{}/".format("[{}]".format(addr) if is_ipv6_address(addr) else addr, PORT) for addr in get_interface_addresses()]
     }
 
+################################################################################
+#
+# Announce this server
+#
 
 def post_server_info_to(url):
     """Post the server information to the url."""
@@ -188,5 +192,22 @@ def announce_loop():
 if serving_offline_material:
     thread = threading.Thread(target=announce_loop, daemon=True)
     thread.start()
+
+################################################################################
+#
+# Show a badge for statistical reasons.
+#
+
+@app.route("/announce.svg")
+def get_server_count_svg():
+    # from https://stackoverflow.com/a/14343957/1320237
+    badge_url = "https://img.shields.io/badge/Offline%20Servers-{}-73449b.svg"
+    servers = set(entry[1] for entry in announced_servers)
+    return redirect(badge_url.format(len(servers)), code=302)
+
+################################################################################
+#
+# Run the app
+#
 
 app.run(debug=True, host='::', port=PORT)
