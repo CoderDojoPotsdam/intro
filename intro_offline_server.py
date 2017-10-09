@@ -100,6 +100,7 @@ def allow_javascript_json(data):
     """Allow browser access"""
     response = make_response(dumps(data))
     response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Content-Type'] = "application/json"
     return response
 
 @app.route("/announce", methods=["POST"])
