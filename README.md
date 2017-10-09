@@ -19,4 +19,4 @@ If you have any questions or like to get in touch, [join our chat on gitter][git
 [documentation]: https://github.com/CoderDojoPotsdam/intro/blob/master/_docs
 [gitter]: https://gitter.im/CoderDojoPotsdam/intro?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 [dockerhub]: https://hub.docker.com/r/coderdojopotsdam/intro/
-[server-branch]: https://github.com/CoderDojoPotsdam/intro/blob/server
+[server-branch]: https://github.com/CoderDojoPotsdam/intro/tree/server
