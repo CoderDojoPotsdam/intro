@@ -1,7 +1,7 @@
 server
 ======
 
-The server served the [offline-build branch][offline-build].
+The server serves the [offline-build branch][offline-build].
 If it runs locally, this allows the [intro] page to serve offline content.
 
 [offline-build]: https://github.com/CoderDojoPotsdam/intro/tree/offline-build
@@ -20,8 +20,13 @@ To install the offline server, do this:
 
     pip3 install https://github.com/CoderDojoPotsdam/intro/archive/server.zip
 
-Note that you might want to use the `--user` switch if you do not have
-administrator rights.
+Windows:
+
+    py -3 -m pip install https://github.com/CoderDojoPotsdam/intro/archive/server.zip
+
+**Note:** You might want to use the `--user` switch if you do not have
+administrator rights. You can use the `--upgrade` argument of pip to update you installation.
+
 
 Also, either download or clone the offline version of the website.
 
@@ -37,16 +42,47 @@ Also, either download or clone the offline version of the website.
 Run the server
 --------------
 
-In order to run the server, you can use this command after installation:
+In order to run the server, you can use this command after installation and
+when you are in the directory of this file.
 
     export OFFLINE_BUILD_DIRECTORY=path/to/offline-build
     python3 -m intro_offline_server
+    
+Windows:
 
-This gives the following output:
+    set OFFLINE_BUILD_DIRECTORY=path/to/offline-build
+    py -3 -m intro_offline_server
+
+This yields the following output:
 
 ```
- * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ * Running on http://[::]:25444/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 278-881-192
 ```
+
+These are all configuration variables:
+
+- `OFFLINE_BUILD_DIRECTORY` - If given, this is the directory the server serves the offline content from.
+  Only if this variable is set, the server sends announcements to the servers in the [servers][servers] file.
+  These announcements include all HTTP addresses the server could possibly reached in the local network.
+- `PORT` defaults to `25444` - This is the port at which the HTTP server listens for connections with both IPv4 and IPv6.
+- Announcements
+  - `SECONDS_TO_CONNECT` defaults to `20` - These are the seconds to establish a connection to
+    the servers in the [servers][servers] file for announcement.
+  - `SECONDS_TO_UNTIL_OUTDATED` defaults to 10 Minutes - This is the time an announcement is valid.
+    This is only interesting to servers which receive announcements.
+  - `SECONDS_TO_REPORT` defaults to 3 Minutes, 20 Seconds - This is the time interval in which
+    a server announces its exitence to the servers in the [servers][servers] file.
+
+You can set these variables before the server is started in the same command line, like this under Ubuntu:
+
+    export PORT=25444
+
+Windows:
+
+    set PORT=25444
 
 Automated Updated Start
 -----------------------
@@ -92,9 +128,11 @@ You can also run and start the docker container:
 
     docker run --rm -p 25444:25444 coderdojopotsdam/intro
 
-You may want to add this server to the [servers.txt](servers.txt) file if it has
+You may want to add this server to the [servers][servers] file if it has
 an external reachability.
 
 To build the container, run
 
     docker build --tag coderdojopotsdam/intro .
+
+[servers]: servers.txt
