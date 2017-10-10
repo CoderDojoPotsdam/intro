@@ -171,8 +171,8 @@ jshero:
 
 opentechschool:
   title:
-    en: Curriculum: JavaScript for absolute beginners
-    de: Kursmaterial: JavaScript für absolute Beginner
+    en: Curriculum - JavaScript for absolute beginners
+    de: Kursmaterial - JavaScript für absolute Beginner
   description:
     en: The goal of this workshop is to learn enough JavaScript to be dangerous, and to get a good feel for the natural habitat (web, browser, HTML) of JavaScript programs.
     de: Unser Ziel für diesen Workshop ist es, genug JavaScript zu lernen um gefährlich zu sein und nebenbei ein Gefühl für JavaScripts natürlichen Lebensraum (Web, Browser, HTML) zu bekommen.
