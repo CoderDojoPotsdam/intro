@@ -187,7 +187,7 @@ Then, you add your new content:
   The goal is to update this after some years when you are not around,
   so please add everything you can to describe what you did and where you got this from.
 - Add the necessary files.  
-  Sometimes, you add many files. In this case, it might be wise to put them into a folder next to your README.md file.
+  Sometimes, you add many files. In this case, it might be wise to put them into a new folder next to your README.md file.
   This way, they can be easily deleted and updated.
 - If you like to create an `index.html` file which redirects to other files, you can copy and modify the file from 
   the [lightbot offline folder][lightbot-index].
@@ -206,5 +206,5 @@ You can also have a look at the other content in the [offline branch][offline-br
 [offline-branch-lightbot]: https://github.com/CoderDojoPotsdam/intro/blob/offline/lightbot/index.html
 [gitter]: https://gitter.im/CoderDojoPotsdam/intro
 [branches]: Branches.md
-[index-file]: ../../index.html
+[index-file]: ../index.html
 [lightbot-index]: https://github.com/CoderDojoPotsdam/intro/blob/offline/lightbot/index.html
