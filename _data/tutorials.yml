@@ -154,3 +154,46 @@ waterloo:
     es: Este tutorial de la Universidad de Waterloo (Canadá) contiene una introducción a Python, incluyendo errores frecuentes.
   categories:
   - python
+
+jshero:
+  title:
+    en: JavaScript Hero
+    de: JavaScript Hero
+  description:
+    en: Learn to code with JavaScript Hero, the tutorial with interactive exercises.
+    de: Lerne programmieren mit JavaScript Hero, dem Tutorial mit interaktiven Übungen.
+  url:
+    en: http://www.jshero.net/en/home.html
+    de: http://www.jshero.net/home.html
+  categories:
+  - syntax
+  - javascript
+
+opentechschool:
+  title:
+    en: Curriculum: JavaScript for absolute beginners
+    de: Kursmaterial: JavaScript für absolute Beginner
+  description:
+    en: The goal of this workshop is to learn enough JavaScript to be dangerous, and to get a good feel for the natural habitat (web, browser, HTML) of JavaScript programs.
+    de: Unser Ziel für diesen Workshop ist es, genug JavaScript zu lernen um gefährlich zu sein und nebenbei ein Gefühl für JavaScripts natürlichen Lebensraum (Web, Browser, HTML) zu bekommen.
+  url:
+    en: https://opentechschool.github.io/js-beginners-1/
+    de: https://opentechschool.github.io/js-beginners-1/index_de.html
+  categories:
+  - syntax
+  - javascript
+
+khanacademy:
+  title:
+    en: Try an Hour of Code with Khan Academy
+    de: Mache eine Hour of Code mit der Khan Academy
+  description:
+    en: We have many ways to do Hour of Code at Khan Academy. Choose the one that suits you best!
+    de: Es gibt viele Wege, um an der "Hour of Code" teilzunehmen. Wähle den, der dir am meisten zusagt!
+  url:
+    en: https://www.khanacademy.org/hourofcode
+    de: https://de.khanacademy.org/hourofcode
+  categories:
+  - syntax
+  - javascript
+  - hour-of-code
