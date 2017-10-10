@@ -4,7 +4,7 @@ This documentation should clarify how to do what you want with this repository.
 If it does not appear here, [please create an issue and ask][new-issue] or join our [chat on gitter][gitter] to get help.
 
 - Here, you can find guidance on how to change the content.
-- [In the Branches.md file][branches], you find a descriptive overview about the structure of ths repository.
+- [In the Branches.md file][branches], you find a descriptive overview about the structure of this repository.
 
 ## How to create add a tutorial
 
