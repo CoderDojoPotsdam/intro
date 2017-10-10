@@ -1,3 +1,11 @@
+<!-- This is a comment and invisible in the issue. -->
+**Context:**
+<!-- Why you here? What is your greater goal? E.g. 
+     - I would like to use this tool. 
+     - I just stumbled upon this site.
+     - I want to contribute.
+     -->
+
 **What do I see?**  
 <!-- Add a description below. -->
 
