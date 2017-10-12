@@ -83,7 +83,8 @@ and can be either
   - category: symbols
   ```
   Each category can have a `structure` attribute which allows to embed more tutorials or categories.
-  This example opens the category `symbols` and adds the tutorial `lightbot` to it.
+  This example opens the category `symbols` and adds the tutorial `lightbot`
+  to it.
   ```yaml
   - category: symbols
     structure:
