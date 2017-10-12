@@ -3,7 +3,7 @@
 [![Join the chat at https://gitter.im/CoderDojoPotsdam/intro](https://badges.gitter.im/CoderDojoPotsdam/intro.svg)][gitter]
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com) 
 [![Build Status](https://travis-ci.org/CoderDojoPotsdam/intro.svg?branch=master)](https://travis-ci.org/CoderDojoPotsdam/intro)
-[![Docker Build Status](https://img.shields.io/docker/build/jrottenberg/ffmpeg.svg)][dockerhub]
+[![Docker Build Status](https://img.shields.io/docker/build/coderdojopotsdam/intro.svg)][dockerhub]
 [![Offline Servers Online](https://intro.quelltext.eu/announce.svg)][server-branch]
 
 This is an introduction site for programming tutorials.
