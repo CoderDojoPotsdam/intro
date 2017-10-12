@@ -179,6 +179,12 @@ opentechschool:
   url:
     en: https://opentechschool.github.io/js-beginners-1/
     de: https://opentechschool.github.io/js-beginners-1/index_de.html
+  links:
+  - name: Online
+    url: https://opentechschool.github.io/js-beginners-1/
+  - name: Offline
+    url: offline/js-beginners/index.html
+    offline: true
   categories:
   - syntax
   - javascript
