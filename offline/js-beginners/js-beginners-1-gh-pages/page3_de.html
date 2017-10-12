@@ -1,0 +1,266 @@
+<!doctype html>
+
+<head>
+  <title>Kursmaterial — Seite 3</title>
+  <link rel=stylesheet href="fonts.googleapis.com/css-family=Averia+Serif+Libre:300,400">
+  <link rel=stylesheet href=style.css>
+  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+
+<h1>Kursmaterial: Seite 3, Daten</h1>
+
+<p>In der Welt des Computers gibt es nur Daten. Was nicht Daten ist,
+ist nicht. Programme sind Daten. Programme erschaffen neue Daten. Es
+ist ein eigenartiger, auf Silicium basierender Kreislauf des Lebens.</p>
+
+
+<h2 class=step>Datenstrukturen</h2>
+
+<h3 class=goal>Ziel</h3>
+
+<p>Lerne mehrere Werte in einer Datenstruktur zu gruppieren und diese
+Gruppierung zu verwenden.</p>
+
+<p>Aufgabe: Zeichne einen Regenbogen indem du sieben konzentrische
+Kreise mit den Farben <em>red, orange, yellow, green,
+cyan, purple, white</em> zeichnest, wobei jeder Kreis kleiner als der
+zuvor ist.</p>
+
+<h3 class=inst>Anweisungen</h3>
+
+<p>Der naive Ansatz wäre:</p>
+
+<pre>function rainbow(x, y) {
+  color("red");
+  circle(x, y, 150);
+  color("orange");
+  circle(x, y, 145);
+  color("yellow");
+  circle(x, y, 140);
+  color("green");
+  circle(x, y, 135);
+  color("cyan");
+  circle(x, y, 130);
+  color("purple");
+  circle(x, y, 125);
+  color("white");
+  circle(x, y, 120);
+}</pre>
+
+<p>Das ist nicht falsch, aber es ist auch nicht richtig. Es kommt ständig zu Wiederholungen.
+  Hier ist <a href="sandbox/#rainbow.js" target=_blank>eine
+bessere Variante</a>:</p>
+
+<pre>function rainbow(x, y) {
+  var colors = ["red", "orange", "yellow", "green", "cyan", "purple", "white"];
+  var count = 0;
+  while (count < colors.length) {
+    color(colors[count]);
+    circle(x, y, 150 - 5 * count);
+    count = count + 1;
+  }
+}</pre>
+
+<h3 class=ex>Erklärung</h3>
+
+<p>Das Ding mit den eckigen Klammern (<strong>[</strong>
+und <strong>]</strong>) wird ein <em>Array</em> genannt. Ein Array ist ein
+Wert der andere Werte enthält - in diesem Fall enthält er sieben Strings
+die Farben benennen.</p>
+
+<p>Die Werte in einem Array werden seine <em>Elemente</em> genannt. Die
+Elemente in einem Array sind geordnet, was bedeutet, dass jedes Element
+eine Position innerhalb des Arrays hat. Die Positionen in einem Array
+werden ab Null gezählt, so dass im Beispiel oben <code>"red"</code> die
+Position 0 hat, und <code>"white"</code> (das siebte Element) die
+Position 6. Die Schreibweise <code>colors[1]</code> wird benutzt um auf
+die Elemente in einem Array zuzugreifen — in diesem Fall wäre es
+<code>"orange"</code>.</p>
+
+<p>Eine weitere neue Schreibweise ist der Punkt in
+<code>colors.length</code>, auch wenn wir den bei
+<code>Math.random</code> schon gesehen haben.
+Er wird verwendet um auf andere Arten von Werten zuzugreifen, die
+<em>Eigenschaften</em> (<em>properties</em>) genannt werden. Bei
+<code>Math.random</code> wird es nur zur Gruppierung verwendet:
+Eine ganze Sammlung von mathematischen Funktionen sind als Eigenschaften
+von <code>Math</code> verfügbar (zum Beispiel <code>Math.round</code>
+zum Runden von Zahlen). Aber im Fall von <code>colors.length</code>
+wird auf eine Eigenschaft zugegriffen, die in direkter Verbindung zum
+Array <code>colors</code> steht: die Gesamtzahl der Elemente im Array
+(sieben).</p>
+
+<p>Die <code>while</code>-Schleife läuft eines nach dem anderen über die
+Elemente des Arrays und verwendet dabei die Variable <code>count</code>
+um ihre Position zu speichern. Bei jedem Schritt werden die Elemente
+benutzt um die aktuelle Farbe zu setzen und anschließend wird ein Kreis
+der passenden Größe gezeichnet.</p>
+
+<p>Weil diese Art von Schleife (Variable erzeugen, in der
+<code>while</code>-Bedingung prüfen, und aktualisieren) sehr häufig
+vorkommt, gibt es eine kompaktere Schreibweise dafür. Dieses Programm
+ist äquivalent zu dem Vorherigen:</p>
+
+<pre>function rainbow(x, y) {
+  var colors = ["red", "orange", "yellow", "green", "cyan", "purple", "white"];
+  for (var count = 0; count < colors.length; count = count + 1) {
+    color(colors[count]);
+    circle(x, y, 150 - 5 * count);
+  }
+}</pre>
+
+<p>In einer <code>for</code>-Schleife werden das Initialisieren der
+Variablen der Schleife, das Prüfen der Bedingung, und das Aktualisieren
+der Werte zusammen gruppiert, damit einfacher gesehen werden kann, dass
+sie gemeinsam die Schleife ausmachen.</p>
+
+<p><strong>Übung:</strong> Spiele ein bisschen mit dem Aussehen der Regenbögen.
+Sorge z.B. dafür, dass die Streifen etwas dicker werden.</p>
+
+
+<h2 class=step>Benannte Eigenschaften</h2>
+
+<h3 class=goal>Ziel</h3>
+
+<p>Lerne Objekte zu erzeugen und auf ihre Eigenschaften zuzugreifen.</p>
+
+<h3 class=inst>Anweisungen</h3>
+
+<p>Öffne die Konsole wieder, falls du sie geschlossen hast.</p>
+
+<p>Erzeuge eine Variable indem du folgendes in die Konsole eingibst:
+<code>var myObject = {name: "Larry", score: 100};</code></p>
+
+<p>Führe <code>myObject.name</code> und <code>myObject.score</code> aus.</p>
+
+<p>Führe zudem <code>myObject["name"]</code> und <code>myObject["sco" +
+  "re"]</code> aus.</p>
+
+<p>Gib dem Objekt mit <code>myObject.color =
+"purple"</code> eine Eigenschaft hinzu. Dann führe
+<code>myObject.color</code> aus.</p>
+
+<p>Verändere die <code>score</code>-Eigenschaft mit
+<code>myObject.score = 105</code>. Führe dann wieder <code>myObject.score</code>
+aus um sicher zu gehen, ob es geklappt hat.</p>
+
+<h3 class=ex>Erklärung</h3>
+
+<p>Objekte sind ebenfalls Gruppierungen von Werten. Sie verlangen aber,
+dass jeder Wert einen Namen hat. Arrays sind nützlich um irgendeine
+Menge von Werten in einer homogenen Gruppe zu sammeln. Objekte dagegen
+sind besser geeignet wenn jeder Wert eine klar bestimmte Rolle in der
+Gruppierung spielt. Zum Beispiel ist eine Tüte Chips ein Array, aber die
+Teile eines Autos (Motor, Räder, etc.) bilden ein Objekt.</p>
+
+<p>Die Schreibweise <code>{property1: value1, property2: value2}</code>
+wird verwendet um ein Objekt zu erzeugen. Es gibt zwei Arten um auf die
+Eigenschaften eines Objektes zuzugreifen. Die Art mit Punkt,
+<code>object.property</code>, wird verwendet, wenn der Name der
+Eigenschaft schon beim Schreiben des Programms bekannt ist.
+Die Art mit Klammern, <code>object["property"]</code>, lässt zu, dass
+der Name der Eigenschaft als beliebiger Ausdruck angegeben wird und ist
+daher nützlich, wenn der Name erst noch erstellt werden muss.</p>
+
+<p>Zusammen bieten Objekte und Arrays die Möglichkeit, eine große
+Bandbreite an Informationen darzustellen. Ein Beispiel: Eine Liste von
+Spielern in einem Spiel würde üblicherweise ein Array von Objekten sein,
+worin jedes Objekt einen Spieler repräsentiert. Falls eine Liste von
+Ergebnissen mit einzelnen Spielern verbunden wird, wäre diese wiederum
+ein Array in jedem der Spieler-Objekte. So kann man beliebig fortfahren.
+</p>
+
+<p><strong>Übung:</strong> Überlege dir eine JavaScript-Repräsentation
+eines Schachbretts. Es gibt mehrere gute Lösungen.</p>
+
+
+<h2 class=step>Wir haben Daten</h2>
+
+<h3 class=goal>Ziel</h3>
+
+<p>Mache eine einfache Visualisierung eines Datensatzes.</p>
+
+<h3 class=inst>Anweisungen</h3>
+
+<p>In diesem Beispiel haben wir eine neue Variable, <code>weatherData</code>.
+  Sie enthält ein Array mit 3 Objekten - welche Informationen zum kommenden Wetter beinhalten.
+</p>
+
+<p>Jedes Object (stellvertretend für einen Tag) hat eine <code>date</code> Eigenschaft bestehend
+  aus einem String, sowie Zahlen Werte für <code>temperature</code> und <code>humidity</code>.
+</p>
+
+<p>Das Program zeichnet ein Balkendiagramm und stellt die Temperatur jeden Tages dar.</p>
+
+<pre>var width = 600, height = 400;
+
+var weatherData = [
+  {
+    date: "2012-08-21",
+    temperature: 30,
+    humidity: 10
+  },
+  {
+    date: "2012-08-22",
+    temperature: 24,
+    humidity: 45
+  },
+  {
+    date: "2012-08-23",
+    temperature: 28,
+    humidity: 30
+  }
+];
+
+function barChart(x, y, barWidth) {
+  var gutter = 2,
+    xPosition = x,
+    yPosition = y;
+
+  var barHeight = -1 * weatherData[0].temperature;
+  box(xPosition, yPosition, barWidth, barHeight);
+
+  barHeight = -1 * weatherData[1].temperature;
+  xPosition = xPosition + gutter + barWidth;
+  box(xPosition, yPosition, barWidth, barHeight);
+
+  barHeight = -1 * weatherData[2].temperature;
+  xPosition = xPosition + gutter + barWidth;
+  box(xPosition, yPosition, barWidth, barHeight);
+}
+
+function drawing() {
+  color("red");
+  barChart(0, 0, 20);
+}</pre>
+
+<p>Du kannst es dir <a href="sandbox/#weather_report_visualization.js" target="_blank">hier</a>
+ anschauen.</p>
+
+<h3 class=ex>Erklärung</h3>
+
+<p>Um das Ganze ein wenig übersichtlich zu halten, wurden am Anfang erstmal die
+  Breite und Höhe der Zeichenfläche festgelegt (600 und 400 Einheiten).
+</p>
+
+<p>Die <code>barChart</code> Funktion nimmt die Position und die Breite der Balken als Parameter.
+  Danach wird jeweils ein Balken mithilfe der <code>box</code> Funktion gezeichnet.
+  Die Höhe des Balken entspricht dabei der Temperatur, daher am ersten Tag
+  <code>weatherData[0].temperature</code>.
+</p>
+
+<p>
+  Auf die gleiche Weise wird anschließend die Temperatur für den zweiten und dritten Tag dargestellt.
+</p>
+
+<p><strong>Übung:</strong> Jeden einzelnen Tag selber aufzurufen ist recht unflexibel.
+  Ändere die <code>barChart</code> Funktion so, dass sie eine <code>while</code> Schleife verwendet
+  um durch die Sammlung von Daten zu iterieren und diese automatisch zu zeichnen.
+</p>
+
+<p>Um zu schauen ob deine Funktion so arbeitet wie du es erwartest, füge ein paar zusätzliche Tage
+zu dem Datensatz hinzu. Du kannst welche <a href="http://de.weather.com" target="_blank">im Netz</a> finden.</p>
+
+<h3>Und damit kommen wir…</h3>
+
+<p><a href="page4_de.html">→ …zur letzte Seite</a>.</p>

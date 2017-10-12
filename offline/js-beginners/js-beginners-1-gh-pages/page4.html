@@ -1,0 +1,110 @@
+<!doctype html>
+
+<head>
+  <title>Curriculum — page 4</title>
+  <link rel=stylesheet href="fonts.googleapis.com/css-family=Averia+Serif+Libre:300,400">
+  <link rel=stylesheet href=style.css>
+  <meta http-equiv=Content-Type content="text/html; charset=utf-8">
+</head>
+
+<h1>Outlook: a game</h1>
+
+<p>That's it for today! We hope you liked the workshop and you are hungry for
+more.</p>
+
+<p>Putting together everything you learned so far and a bit more, you could
+do much bigger things. How about a game? At least you've earned yourself a play!</p>
+
+
+<h2 class=step>Play a game!</h2>
+
+<h3 class=goal>Goal</h3>
+
+<p>Just check it out and stop believing that programming an interactive game is
+  a hard thing to do.</p>
+
+<h3 class=inst>Instructions</h3>
+
+<p>Open <a href="sandbox/#invaders.js" target=_blank>the game</a>.</p>
+
+<p>Play the game. Think <em>"Yeah, that would have been impressive—if
+this were 1970."</em></p>
+
+<p>Read through the code and the comments.</p>
+
+<h3 class=ex>Explanation</h3>
+
+<p>With some extremely trivial computations, you can produce an
+interactive game experience. Or some similarly engaging object, such
+as a simulation of something (physics, life). Isn't that cool?</p>
+
+
+<h2 class=step>Extend it</h2>
+
+<h3 class=goal>Goal</h3>
+
+<p>To deepen your understanding of the Invaders program, we try to
+customize it and add some features.</p>
+
+<h3 class=inst>Instructions</h3>
+
+<p>Perform some or all of the modifications described below, and test
+(at every little step) whether things still work as expected.</p>
+
+<p>At any time, you can reload the page (Ctrl-R / Cmd-R) to go back to
+the starting program. To undo just your last few changes, use the
+Ctrl-Z / Cmd-Z key in the editor. If at any point, you have a program
+that you feel you might want to return to, use the 'Save' control at
+the top of the page to store it. You can then recall it with the
+'Load' control (note that this will overwrite your current
+program).</p>
+
+<p>When stuck, don't sit around grinding your teeth. Ask the coaches
+for help early and often.</p>
+
+<h3 class=ex>Explanation</h3>
+
+<p>If you have your own ideas for improvements to the game, or, for
+the more adventurous, for a completely different game you'd like to
+write—go right ahead. The ideas below are merely suggestions.</p>
+
+<p><strong>A)</strong> So, for one thing, this game is really easy.
+What every self-respecting arcade game does is increase difficulty
+over time. Add a 'level' counter that gets updated somehow in
+the <code>frame</code> function, and that influences the chance that a
+new invader will appear in a given turn. Display the current level
+somewhere on the screen using the <code>text</code> function.</p>
+
+<p><strong>B)</strong> Another neat feature would be to have multiple
+kinds of invaders. Make the <code>newInvader</code> function also add
+a <code>type</code> property to the invader it creates, which it
+randomly fills, for example like this:</p>
+
+<pre>function newInvader() {
+  var type = "normal";
+  if (Math.random() < 0.4)
+    type = "super";
+  else if (Math.random() < 0.2)
+    type = "superduper";
+  ....
+}</pre>
+
+<p>Then update the <code>drawInvader</code> function to draw different
+types differently (for example, by simply giving them a different
+color), and update <code>processBullets</code> so that non-normal
+invaders have a certain chance (use <code>Math.random</code> again) to
+survive being hit by a bullet.</p>
+
+<p><strong>C)</strong> Finally, and slightly more challenging to do,
+you could make the invaders move back and forth horizontally during
+their descent.</p>
+
+<p>The tricky part for this is to decide which way to move the
+invaders. If you want to make them zig-zag left and right
+synchronously, as in the original Space Invaders game, you'll have to
+use the same direction for all invaders. You could keep a counter
+variable for this that is incremented every turn, and that, when
+reaching some number of turns, causes the direction in which the
+invaders move (also a variable) to be flipped. You then also reset the
+counter back to zero when the flip happens, so that after another X
+turns it will flip the direction again.</p>
