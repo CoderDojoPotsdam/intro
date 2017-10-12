@@ -4,6 +4,8 @@ This documentation should clarify how to do what you want with this repository.
 If it does not appear here, [please create an issue and ask][new-issue] or join our [chat on gitter][gitter] to get help.
 
 - Here, you can find guidance on how to change the content.
+  - [In the Overview Section][overview-pages], you can read about how to
+    customize this overview for your needs and create a new page.
 - [In the Branches.md file][branches], you find a descriptive overview about the structure of this repository.
 
 ## How to create add a tutorial
@@ -144,9 +146,9 @@ Then, you add your new content:
 - Add the necessary files.  
   Sometimes, you add many files. In this case, it might be wise to put them into a new folder next to your README.md file.
   This way, they can be easily deleted and updated.
-- If you like to create an `index.html` file which redirects to other files, you can copy and modify the file from 
+- If you like to create an `index.html` file which redirects to other files, you can copy and modify the file from
   the [lightbot offline folder][lightbot-index].
-  
+
 You can also have a look at the other content in the [offline branch][offline-branch] to find inspiration.
 
 
@@ -163,3 +165,4 @@ You can also have a look at the other content in the [offline branch][offline-br
 [branches]: Branches.md
 [index-file]: ../index.html
 [lightbot-index]: https://github.com/CoderDojoPotsdam/intro/blob/offline/lightbot/index.html
+[overview-pages]: OverviewPages.md
