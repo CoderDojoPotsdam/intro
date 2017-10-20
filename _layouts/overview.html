@@ -23,13 +23,19 @@
       {%- endfor %}
       <a class="language-link" href="index.html">Homepage</a>      
     </div>
-    {{ page.content }}
-    {%- for language in site.data.languages -%}
-      <div class="show-language show-language-{{ language.id | escape }} grid-whole padded equalize" id="section-{{ language.id | escape }}">
-        <div class="show-language-heading">{{ language.name | escape }}</div>
-        {% include structure.html structure=page.structure %}
+    <div id="main">
+      <div id="description">
+      {{ page.content }}
       </div>
-    {%- endfor %}
+      <div id="structure">
+        {%- for language in site.data.languages -%}
+          <div class="show-language show-language-{{ language.id | escape }} grid-whole padded equalize" id="section-{{ language.id | escape }}">
+            <div class="show-language-heading">{{ language.name | escape }}</div>
+            {% include structure.html structure=page.structure %}
+          </div>
+        {%- endfor %}
+      </div>
+    </div>
     {% include footer.html %}
   </body>
 </html>
