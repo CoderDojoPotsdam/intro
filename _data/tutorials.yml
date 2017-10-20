@@ -169,10 +169,10 @@ jshero:
   - syntax
   - javascript
 
-opentechschool:
+opentechschool-javascript-beginners:
   title:
     en: Curriculum - JavaScript for absolute beginners
-    de: Kursmaterial - JavaScript für absolute Beginner
+    de: Kursmaterial - JavaScript für absolute Anfänger
   description:
     en: The goal of this workshop is to learn enough JavaScript to be dangerous, and to get a good feel for the natural habitat (web, browser, HTML) of JavaScript programs.
     de: Unser Ziel für diesen Workshop ist es, genug JavaScript zu lernen um gefährlich zu sein und nebenbei ein Gefühl für JavaScripts natürlichen Lebensraum (Web, Browser, HTML) zu bekommen.
@@ -180,11 +180,11 @@ opentechschool:
     en: https://opentechschool.github.io/js-beginners-1/
     de: https://opentechschool.github.io/js-beginners-1/index_de.html
   links:
-  - name: Online
-    url: https://opentechschool.github.io/js-beginners-1/
   - name: Offline
     url: offline/js-beginners/index.html
     offline: true
+  - name: Online
+    url: https://opentechschool.github.io/js-beginners-1/
   categories:
   - syntax
   - javascript
