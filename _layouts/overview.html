@@ -21,11 +21,11 @@
       {%- for language in site.data.languages %}
         <a class="language-link" href="#section-{{ language.id | escape }}">{{ language.name | escape }}</a>
       {%- endfor %}
-      <a class="language-link" href="index.html">Homepage</a>      
+      <a class="language-link" href="index.html">Homepage</a>
     </div>
     <div id="main">
       <div id="description">
-      {{ page.content }}
+        {{ page.content }}
       </div>
       <div id="structure">
         {%- for language in site.data.languages -%}
