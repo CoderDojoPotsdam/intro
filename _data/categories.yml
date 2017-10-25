@@ -13,7 +13,7 @@ blocks:
     en: Blocks
     es: Bloques
   description:
-    de: Schreibe eigene Programme, indem du Blöcke zusammen steckst.    
+    de: Schreibe eigene Programme, indem du Blöcke zusammen steckst.
     en: Write your own programs by plugging building blocks together.
     es: Escribe tus propios programas juntando bloques.
 syntax:
@@ -31,4 +31,10 @@ python:
   description:
     de: Python is eine Allzweckprogramiersprache.
     en: Python is an all purpose programming language.
-    es: Python es un potente lenguaje de programación que se puede usar para muchas cosas 
+    es: Python es un potente lenguaje de programación que se puede usar para muchas cosas
+javascript:
+  name: JavaScript
+  url: https://www.javascript.com/
+  description:
+    de: JavaScript ist die Programmiersprache, in der Webseiten geschrieben werden.
+    en: JavaScript is the programming language for websites.
