@@ -153,3 +153,11 @@ footer .space {
   display: inline-block;
   padding-right: 0.2em;
 }
+
+.offline a {
+  background-color: #49b749;
+  color: white;
+  text-decoration: none;
+  padding-right: 2px;
+  padding-left: 2px;
+}
