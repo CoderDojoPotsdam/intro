@@ -2,3 +2,5 @@ _site
 /offline
 /intro
 /_site-offline
+
+\.DS_Store
