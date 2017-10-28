@@ -1,27 +1,33 @@
-<div class="tutorial s-grid-whole m-grid-half l-grid-third padded equalize">
-  {%- assign tutorial_id = include.structure -%}
-  {%- assign tutorial = site.data.tutorials[tutorial_id] %}
-  <div class="heading">
-    {%- include lang-link.html text=tutorial.title href=tutorial.url -%}
-  </div>
-  <div class="description">
-    {%- include lang.html text=tutorial.description %}
-  </div>
-  {%- if tutorial.links -%}
-    {%- for link in tutorial.links -%}
-      {%- if link.offline -%}
-        <span class="offline">
-          {% include lang-link.html text=link.name href=link.url -%} |
-        </span>
-        <span class="local">
-          {%- assign local_link = site.local_server | append: "/" -%}
-          {%- include lang-link.html text=link.name href=link.url href_base=local_link -%}
-      {%- else -%}
-        <span class="online">
-          {% include lang-link.html text=link.name href=link.url -%}
-      {%- endif -%}
-      {%- if forloop.last -%}{%- else %} | {% endif %}
+<div class="tutorial col s12 m4">
+  <div class="card small blue-grey darken-1">
+    <div class="card-content white-text">
+      {%- assign tutorial_id = include.structure -%}
+      {%- assign tutorial = site.data.tutorials[tutorial_id] %}
+      <span class="card-title">
+        {%- include lang-link.html text=tutorial.title href=tutorial.url -%}
       </span>
-    {% endfor -%}
-  {%- endif -%}
+      <p class="description">
+        {%- include lang.html text=tutorial.description %}
+      </p>
+    </div>
+    {%- if tutorial.links -%}
+      <div class="card-action">
+        {%- for link in tutorial.links -%}
+          {%- if link.offline -%}
+            <span class="offline">
+              {% include lang-link.html text=link.name href=link.url -%} |
+            </span>
+            <span class="local">
+              {%- assign local_link = site.local_server | append: "/" -%}
+              {%- include lang-link.html text=link.name href=link.url href_base=local_link -%}
+            </span>
+          {%- else -%}
+            <span class="online">
+              {% include lang-link.html text=link.name href=link.url -%}
+            </span>
+          {%- endif -%}
+        {% endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
 </div>
