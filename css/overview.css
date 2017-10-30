@@ -48,6 +48,11 @@ body {
   margin: 0px;
 }
 
+.redirect-link {
+  text-decoration: none;
+  color: black;
+}
+
 /*******************************************************
  * language
  */
