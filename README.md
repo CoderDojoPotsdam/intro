@@ -31,6 +31,8 @@ This page is used by the following CoderDojos:
 
 If you like to add new pages, translate or change something, [the documentation can help][documentation].
 If you have any questions or like to get in touch, [join our chat on gitter][gitter].
+This is a beginner-friendly environent where we would like to help you get
+started with programming. You can work on [issues][issues] to help us.
 
 [documentation]: https://github.com/CoderDojoPotsdam/intro/blob/master/_docs
 [gitter]: https://gitter.im/CoderDojoPotsdam/intro?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
@@ -38,3 +40,4 @@ If you have any questions or like to get in touch, [join our chat on gitter][git
 [server-branch]: https://github.com/CoderDojoPotsdam/intro/tree/server#readme
 [page]: https://CoderDojoPotsdam.github.io/intro
 [offline-download]: https://github.com/CoderDojoPotsdam/intro/archive/offline-build.zip
+[issues]: https://github.com/CoderDojoPotsdam/intro/issues
