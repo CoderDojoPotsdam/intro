@@ -4,10 +4,10 @@
       {%- assign tutorial_id = include.structure -%}
       {%- assign tutorial = site.data.tutorials[tutorial_id] %}
       <span class="card-title">
-        {%- include lang-link.html text=tutorial.title href=tutorial.url -%}
+        {% include translate-link text=tutorial.title href=tutorial.url language=include.language%}
       </span>
       <p class="description">
-        {%- include lang.html text=tutorial.description %}
+        {%- include translate text=tutorial.description language=include.language %}
       </p>
     </div>
     {%- if tutorial.links -%}
@@ -15,17 +15,17 @@
         {%- for link in tutorial.links -%}
           {%- if link.offline -%}
             <span class="offline">
-              {% include lang-link.html text=link.name href=link.url -%} |
+              {% include translate-link text=link.name href=link.url language=include.language %}
             </span>
             <span class="local">
-              {%- assign local_link = site.local_server | append: "/" -%}
-              {%- include lang-link.html text=link.name href=link.url href_base=local_link -%}
+              {% assign local_link = site.local_server | append: "/" -%}
+              {%- include translate-link text=link.name href=link.url href_base=local_link language=include.language %}
             </span>
           {%- else -%}
             <span class="online">
-              {% include lang-link.html text=link.name href=link.url -%}
+              {% include translate-link text=link.name href=link.url language=include.language -%}
             </span>
-          {%- endif -%}
+          {%- endif %}
         {% endfor -%}
       </div>
     {%- endif -%}
