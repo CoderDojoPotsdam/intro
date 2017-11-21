@@ -1,19 +1,6 @@
 ---
 ---
 /*******************************************************
- * switch on languages
- */
-{%- for language in site.data.languages -%}
-  {%- assign language_id = language | first -%}
-    .translation-{{ language.id }} {
-      display: none;
-    }
-    .show-language-{{ language.id }} .translation-{{ language.id }} {
-      display: inline;
-    }
-{%- endfor -%}
-
-/*******************************************************
  * header
  */
 
