@@ -1,2 +1,3 @@
 http://localhost:25444/announce
+http://intro.quelltext.eu/announce
 https://intro.quelltext.eu/announce
