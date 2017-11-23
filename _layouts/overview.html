@@ -20,22 +20,29 @@
     <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
   </head>
   <body>
-    <div class="header">
-      <a class="redirect-link" href="{{ page.homepage }}"><img class="page-logo" src="{{ page.image | escape }}"/>
-      <span class="page-title">{{ page.title | escape }}</span></a>
-      <select id="offline-servers" class="invisible" onchange="switchOfflineServer(this)"></select>
-      {%- for language in site.data.languages %}
-        <a class="language-link" href="#section-{{ language.id | escape }}">{{ language.name | escape }}</a>
-      {%- endfor %}
-      <a class="language-link" href="index.html">Homepage</a>
-    </div>
+    <header>
+      <nav>
+        <div class="nav-wrapper">
+          <a href="{{ page.homepage }}" class="brand-logo">
+            <img class="page-logo" src="{{ page.image | escape }}"/>{{ page.title | escape }}
+          </a>
+          <select class="invisible" id="offline-servers" onchange="switchOfflineServer(this)"></select>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+            {%- for language in site.data.languages %}
+              <li><a href="#section-{{ language.id | escape }}">{{ language.name | escape }}</a></li>
+            {%- endfor %}
+            <li><a href="index.html">Homepage</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <div id="main">
       <div id="description">
         {{ page.content }}
       </div>
       <div id="structure">
         {%- for language in site.data.languages -%}
-          <div class="show-language show-language-{{ language.id | escape }} grid-whole padded equalize" id="section-{{ language.id | escape }}">
+          <div class="show-language show-language-{{ language.id | escape }}" id="section-{{ language.id | escape }}">
             <div class="show-language-heading">{{ language.name | escape }}</div>
             {% include structure.html structure=page.structure language=language %}
           </div>

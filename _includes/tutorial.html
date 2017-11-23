@@ -4,7 +4,9 @@
       {%- assign tutorial_id = include.structure -%}
       {%- assign tutorial = site.data.tutorials[tutorial_id] %}
       <span class="card-title">
-        {% include translate-link text=tutorial.title href=tutorial.url language=include.language%}
+        <a href="{% include translate text=tutorial.url language=include.language %}">
+          {%- include translate text=tutorial.title language=include.language -%}
+        </a>
       </span>
       <p class="description">
         {%- include translate text=tutorial.description language=include.language %}

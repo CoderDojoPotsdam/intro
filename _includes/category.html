@@ -2,7 +2,9 @@
   {%- assign category_id = include.structure.id -%}
   {%- assign category = site.data.categories[category_id] %}
   <div class="heading">
-    {%- include translate text=category.name language=include.language -%}
+    <h2>
+      {%- include translate text=category.name language=include.language -%}
+    </h2>
   </div>
   <div class="description">
     {%- include translate text=category.description language=include.language %}
