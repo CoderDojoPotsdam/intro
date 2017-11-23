@@ -1,4 +1,4 @@
-Development Setup
+Development Guide
 =================
 
 You want to change this code and see how your changes integrate into the website?
@@ -27,6 +27,10 @@ Your intro folder should look like [this][branch-master].
 Now, you are ready to build the site.
 For the following commands to work, your command line should be in the
 intro directory.
+
+The following guide covers the installation of Jekyll.
+It is intended to work.
+If you like an alternate installation, you can have a look at the [Jekyll Documentation][install-jekyll].
 
 Install Ruby
 ------------
@@ -302,3 +306,4 @@ please [chat with us][chat].
 [issues]: https://github.com/CoderDojoPotsdam/intro/issues
 [chat]: https://gitter.im/CoderDojoPotsdam/intro
 [travis]: https://travis-ci.org/CoderDojoPotsdam/intro
+[install-jekyll]: https://jekyllrb.com/docs/installation/
