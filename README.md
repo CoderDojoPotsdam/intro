@@ -13,11 +13,11 @@ The following use-cases are considered:
 - Distribute the web page
   1. [**View the website online**][page]  
      The webpage is served by GitHub pages.
-     You can view it online any time you want. Even after a meeting,
+     You can view it online anytime you want. Even after a meeting,
      you can continue to use it at home.
   2. [**Download the website for offline usage**][offline-download]  
      You can distribute it with a USB-Device.
-     Some of the tutorials are available offline and vilibly marked.
+     Some of the tutorials are available offline and visibly marked.
   3. **Distribute the webpage locally**  
      You may install the [offline server][server-branch] on a local computer.
      People can access it without an internet connection.
@@ -26,7 +26,7 @@ The following use-cases are considered:
      This frees up the internet connection and speeds up response time.
 - Customize your page
   1. **Languages**  
-     Sometimes not all participants of a meeting speak the local language.
+     Sometimes not all participants in a meeting speak the local language.
      Translations are the same for all pages.
      Your page profits from translations others make.
   2. **Flexible structure**  
