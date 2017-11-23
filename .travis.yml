@@ -6,7 +6,8 @@ env:
     - OFFLINE_BUILD_FOLDER=intro
     - OFFLINE_FOLDER="$OFFLINE_BUILD_FOLDER/offline"
 install:
-  - gem install github-pages
+  - gem install bundler
+  - bundle install
 script:
   - echo "Build online version"
   - jekyll build
