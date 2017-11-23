@@ -1,5 +1,6 @@
 ---
 ---
+<!doctype html>
 <html>
   <head>
     <!--<meta http-equiv="refresh" content="5">-->
@@ -27,8 +28,6 @@
         <a class="language-link" href="#section-{{ language.id | escape }}">{{ language.name | escape }}</a>
       {%- endfor %}
       <a class="language-link" href="index.html">Homepage</a>
-      
-
     </div>
     <div id="main">
       <div id="description">
@@ -38,7 +37,7 @@
         {%- for language in site.data.languages -%}
           <div class="show-language show-language-{{ language.id | escape }} grid-whole padded equalize" id="section-{{ language.id | escape }}">
             <div class="show-language-heading">{{ language.name | escape }}</div>
-            {% include structure.html structure=page.structure %}
+            {% include structure.html structure=page.structure language=language %}
           </div>
         {%- endfor %}
       </div>

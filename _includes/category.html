@@ -2,12 +2,12 @@
   {%- assign category_id = include.structure.id -%}
   {%- assign category = site.data.categories[category_id] %}
   <div class="heading">
-    {%- include lang.html text=category.name -%}
+    {%- include translate text=category.name language=include.language -%}
   </div>
   <div class="description">
-    {%- include lang.html text=category.description %}
+    {%- include translate text=category.description language=include.language %}
   </div>
   {%- if include.structure.structure %}
-    {% include structure.html structure=include.structure.structure %}
+    {% include structure.html structure=include.structure.structure language=include.language %}
   {%- endif %}
 </div>

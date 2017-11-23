@@ -1,0 +1,11 @@
+{%- assign translated = false -%}
+{%- for language in site.data.languages -%}
+  {%- if include.text[language.id] -%}
+    {%- assign translated = true -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- if translated -%}
+  {{ include.text[include.language.id] }}
+{%- else -%}
+  {{ include.text }}
+{%- endif -%}

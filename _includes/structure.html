@@ -1,9 +1,9 @@
 <div class="structure row">
   {%- for entry in include.structure -%}
     {%- if entry.id %}
-      {% include category.html structure=entry -%}
+      {% include category.html structure=entry language=include.language-%}
     {%- else %}
-      {% include tutorial.html structure=entry -%}
+      {% include tutorial.html structure=entry language=include.language -%}
     {%- endif -%}
   {%- endfor %}
 </div>
