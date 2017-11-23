@@ -1,21 +1,4 @@
 /*******************************************************
- * switch on languages
- */.translation-de {
-      display: none;
-    }
-    .show-language-de .translation-de {
-      display: inline;
-    }.translation-en {
-      display: none;
-    }
-    .show-language-en .translation-en {
-      display: inline;
-    }.translation-es {
-      display: none;
-    }
-    .show-language-es .translation-es {
-      display: inline;
-    }/*******************************************************
  * header
  */
 
