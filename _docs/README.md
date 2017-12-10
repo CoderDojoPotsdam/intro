@@ -6,7 +6,10 @@ If it does not appear here, [please create an issue and ask][new-issue] or join 
 - Here, you can find guidance on how to change the content.
   - [In the Overview Section][overview-pages], you can read about how to
     customize this overview for your needs and create a new page.
-- [In the Branches.md file][branches], you find a descriptive overview about the structure of this repository.
+- [The Development Guide][dev-guide] guides you through setup and contribution,
+  teaching all you need to know.
+- [In the Branches.md file][branches], you find a descriptive overview about the
+  structure of this repository.
 
 ## How to create add a tutorial
 
@@ -166,3 +169,4 @@ You can also have a look at the other content in the [offline branch][offline-br
 [index-file]: ../index.html
 [lightbot-index]: https://github.com/CoderDojoPotsdam/intro/blob/offline/lightbot/index.html
 [overview-pages]: OverviewPages.md
+[dev-guide]: Development-Guide.md
