@@ -1,133 +1,20 @@
-/*******************************************************
- * header
- */
-
-.header {
-  right: 0px;
-  left: 0px;
-  top: 0px;
-  border: 0px;
-  box-shadow: 0px 1px 5px #989898;
-  overflow: hidden;
-  padding: 0.2em;
-  margin-bottom: 1em;
-}
-
-.header .page-logo {
-  height: 2em;
-  margin-right: 1em;
-  vertical-align: middle;
-  padding-left: 0.2em;
-}
-
-.header .page-title {
-  font-size: 2em;
-}
-
 body {
-  padding-top: 0px; /* header */
-  padding-right: 0px;
-  padding-left: 0px;
-  margin: 0px;
+  background-color: #FCFCFC;
 }
 
-.redirect-link {
-  text-decoration: none;
-  color: black;
-}
-
-/*******************************************************
- * language
- */
-
-.language-link { /* in header */
-  float: right;
-  padding-right: 0.2em;
-}
-
-.show-language {
-}
-
-.show-language-heading {
-
-}
-
-/*******************************************************
- * tutorial
- */
-
-.tutorial {
-
-}
-
-.tutorial > .heading {
-  text-align: center;
-}
-
-.tutorial > .description {
-
-}
-
-/*******************************************************
- * tutorial
- */
-
-.category {
-
-}
-
-.category > .heading {
-  text-align: center;
-}
-
-.category > .description {
-
+header .page-logo {
+  height: 2em;
+  margin: 0px 20px;
+  vertical-align: middle;
 }
 
 /*******************************************************
  * footer
  */
 
-.footer {
-  text-align: center;
-  right: 0px;
-  left: 0px;
-  border: 0px;
-  box-shadow: 0px 1px 5px #989898;
-  overflow: hidden;
-  padding-top: 1em;
-  margin-top: 1em;
-  padding-bottom: 1em;
-}
-
 footer img {
   height: 2em;
   vertical-align: middle;
-}
-
-footer .right {
-  text-align: right;
-  margin-top: 0.5em;
-  width: 32%;
-  display: inline-block;
-}
-
-footer .middle {
-  text-align: center;
-  width: 33%;
-  display: inline-block;
-}
-
-footer .left {
-  text-align: left;
-  width: 32%;
-  display: inline-block;
-}
-
-footer .space {
-  width: 1em;
-  height: 1em;
-  display: inline-block;
 }
 
 /*******************************************************
@@ -137,17 +24,3 @@ footer .space {
 #offline-servers.invisible {
    display: none;
  }
-
-#offline-servers {
-  float: right;
-  display: inline-block;
-  padding-right: 0.2em;
-}
-
-.offline a {
-  background-color: #49b749;
-  color: white;
-  text-decoration: none;
-  padding-right: 2px;
-  padding-left: 2px;
-}
