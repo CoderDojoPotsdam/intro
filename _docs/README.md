@@ -45,7 +45,7 @@ lightbot:
     en: Control a robot and help it light the ground.
     de: Steuere einen Roboter und hilf ihm, die Karte anzuleuchten.
   url:
-    en:http://lightbot.com/hour-of-code.html
+    en: http://lightbot.com/hour-of-code.html
     de: http://lightbot.com/hour-of-code.html
   links:
   - name:
@@ -60,6 +60,25 @@ lightbot:
   - hour-of-code
   - offline
 ```
+
+### Limit Languages
+
+If you with to display the tutorial in only a few languages because it is
+only available in those, you can limit the tutorial to the use in
+the languages of the `title`, `descrition` or `url`:
+
+- ```
+  lightbot:
+    limit-languages-to: title
+  ```
+- ```
+  lightbot:
+    limit-languages-to: url
+  ```
+- ```
+  lightbot:
+    limit-languages-to: description
+  ```
 
 ## How to transtlate
 
