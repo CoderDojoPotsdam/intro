@@ -59,6 +59,18 @@ scratch:
   links:
   - name: Invent with Scratch
     url: https://inventwithscratch.com/book/
+  - name:
+      en: Online
+      de: Online
+    url: https://scratch.mit.edu/
+  - name:
+      en: Download
+      de: Download
+    url: https://scratch.mit.edu/download/
+  - name:
+      en: Version 1.4
+      de: Version 1.4
+    url: https://scratch.mit.edu/scratch_1.4/
   categories:
   - blocks
 
