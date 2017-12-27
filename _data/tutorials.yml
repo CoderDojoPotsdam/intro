@@ -149,9 +149,18 @@ waterloo:
     de: https://cscircles.cemc.uwaterloo.ca/de/
     es: https://cscircles.cemc.uwaterloo.ca/es/
   description:
-    de: Das Waterloo-Tutorial führt auf unterscheidliche Weisen in Python ein und geht auf übliche Fehler ein. Es wird vom BWINF empfohlen.
+    de: Das Waterloo-Tutorial führt auf unterschiedliche Weisen in Python ein und geht auf übliche Fehler ein. Es wird vom BWINF empfohlen.
     en: This tutorial from the University of Waterloo(Canada) has an introduction to Python, including typical failures.
     es: Este tutorial de la Universidad de Waterloo (Canadá) contiene una introducción a Python, incluyendo errores frecuentes.
+  categories:
+  - python
+
+python-kurs:
+  title: Python3-Kurs
+  url: https://www.python-kurs.eu/python3_kurs.php
+  description:
+    de: Wir bieten Ihnen hier ein vollständiges Tutorial, was sich als schneller Einstieg mit vielen praktischen Beispielen und erläuternden Illustrationen bestens für Anfänger - sowohl totale Programmieranfänger als auch Umsteiger von anderen Programmiersprachen - eignet. Aber auch fortgeschrittene Programmierer finden sicherlich noch viele interessante Themen und Einblicke.
+  limit-languages-to: description
   categories:
   - python
 
