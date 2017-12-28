@@ -27,7 +27,7 @@ function httpGetAsync(theUrl, callback)
 }
 
 function checkServerAvailability(server) {
-  console.log("Checking offline server availability of " + server.hostname + " at " + server.address);
+  console.log("Checking offline server availability of " + server.hostname + " at " + server.info);
   httpGetAsync(server.info, function(_){
     connectedLanServer(server);
   })
