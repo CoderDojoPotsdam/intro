@@ -20,7 +20,11 @@ footer img {
 /*******************************************************
  * offline servers
  */
+#offline-servers {
+  display: inline-block;
+  background-color: transparent;
+}
 
 #offline-servers.invisible {
    display: none;
- }
+}
