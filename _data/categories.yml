@@ -38,3 +38,20 @@ javascript:
   description:
     de: JavaScript ist die Programmiersprache, in der Webseiten geschrieben werden.
     en: JavaScript is the programming language for websites.
+websites:
+  name:
+    de: Webseiten
+    en: Websites
+  description:
+    de: Mit diesem Material kannst du lernen, eigene Webseiten zu bauen.
+    en: With this material, you can learn how to make your own websites.
+git:
+  name: Git
+  description:
+    en: If you use Git, you can work on programs in a group and keep track of the development history.
+    de: Wenn du Git benutzt, kannst du deine Programme mit anderen teilen und die Programmgeschichte behalten.
+arduino:
+  name: Arduino
+  description:
+    en: Arduinos are small computers which you can use to control LEDs, motors and more.
+    de: Arduinos sind kleine Computer, mit denen du LEDs, Motoren und vieles mehr ansteuern kannst.

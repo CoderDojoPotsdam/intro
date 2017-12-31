@@ -224,3 +224,152 @@ khanacademy:
   - syntax
   - javascript
   - hour-of-code
+
+meine-erste-webseite:
+  title: Meine erste Webseite
+  description:
+    de: Erstelle deine eigene Webseite. Dieses Tutorial zeigt dir, wie das geht.
+  url: http://coderdojo-linz.github.io/trainingsanleitungen/web/html-meine-erste-webseite.html
+  limit-languages-to: description
+  categories:
+  - html
+  - syntax
+
+hamstermodell:
+  title: Hamstermodell
+  description:
+    de: Steuere einen Hamster durch eine eckige Welt und hilf ihm, alle Körner zu finden.
+  url: http://www.boles.de/hamster/index2.html
+  links:
+  - name: Tutorial
+    url: http://freizeitkreis-bl.de/hamster/
+  limit-languages-to: description
+  categories:
+  - java
+  - syntax
+
+hour-of-python:
+  title:
+    en: Hour of Python
+    de: Eine Stunde Python
+  url: https://hourofpython.com/
+  description: Learn Python for one hour and get a feeling of the language.
+  categories:
+  - python
+  - syntax
+  - hour-of-code
+
+python-for-beginners:
+  title:
+    en: Introduction to Programming with Python
+    de: Programmiereinführung mit Python
+    es: Introducción a Programando con Python
+    ru: Введение в программирование на Python
+    ro: Introducere în Programare utilizând Python
+  description:
+    en: We’ll be learning how to write code to do cool and useful stuff. No longer will you be bound to use others’ programs to do things with your computer - you can make your own!
+    de: Wir werden lernen Code zu schreiben, der coole und nützliche Dinge tut. Du wirst nicht länger daran gebunden sein, Programme von anderen Leuten zu verwenden um mit Deinem Computer Dinge zu tun.
+    es: Aprenderemos cómo escribir código para hacer cosas útiles y geniales. Ya no estará obligado a usar programas de los demás para hacer cosas con su computadora!
+    ru: Мы будем учиться писать код, чтобы делать клёвые и полезные вещи. Отныне вы не обязаны использовать чужие программы, чтобы выполнять работу на компьютере!
+    ro: O să învățăm cum să scriem cod pentru a face lucruri interesante și utile. Nu vei mai fi nevoit să folosești programele altora pentru a face lucruri cu calculatorul tău!
+  url: http://opentechschool.github.io/python-beginners/
+  categories:
+  - python
+  - syntax
+
+building-out-webpages-opentechschool:
+  title:
+    en: Building out Web Pages with HTML and CSS
+    de: Webseiten bauen mit HTML und CSS
+  description:
+    en: Today we will learn how to write a web page with HTML and style it with CSS. Our goal is to create a personal portfolio page with a presentation and contact page.
+    de: Heute werden wir lernen, wie man Websites mit HTML schreibt und mit CSS stylen kann. Unser Ziel ist es, ein persönliches Portfolio mit Präsentation und Kontakt-Seite zu bauen.
+  limit-languages-to: description
+  url: http://opentechschool.github.io/html-css-beginners/
+  categories:
+  - websites
+  - syntax
+
+css-classes:
+  title: CSS-Classes
+  description:
+    en: In this workshop, you’ll learn the very basics of creating a website.
+  limit-languages-to: description
+  url: https://cssclass.es/materials/
+  categories:
+  - websites
+  - syntax
+
+social-coding-with-github:
+  title: Social Coding with GitHub
+  description:
+    en: "This course is intended to introduce beginners to the social side of programming. We’ll be looking at one of the most popular sites for social programming - GitHub."
+  limit-languages-to: description
+  url: http://opentechschool.github.io/social-coding/
+  categories:
+  - git
+  - syntax
+
+github-from-scratch:
+  title: GitHub from Scratch
+  description:
+    en: "Today we will show you around GitHub, one of the most popular online platforms for sharing code and collaborating on projects. Our focus for this course will be on the tools GitHub provides to create websites and even blogs easily from within the platform."
+  limit-languages-to: description
+  categories:
+  - git
+  - syntax
+
+try-github-io:
+  title: Try GitHub
+  description:
+    en: Got 15 minutes and want to learn Git?
+  url: https://try.github.io
+  limit-languages-to: description
+  categories:
+  - git
+  - syntax
+
+git-the-simple-guide:
+  title:
+    en: git - the simple guide
+    de: git - Der einfache Einstieg
+    es: git - la guía sencilla
+    ru: git - the simple guide
+  description:
+    en: just a simple guide for getting started with git. no deep shit ;)
+    de: eine einfache Anleitung, um git zu lernen. Kein Schnick-Schnack ;)
+    es: una guía sencilla para comenzar con git. sin complicaciones ;)
+    ru: простое руководство по работе с git. Ничего сложного ;)
+  url:
+    en: https://rogerdudler.github.io/git-guide/index.html
+    de: https://rogerdudler.github.io/git-guide/index.de.html
+    es: https://rogerdudler.github.io/git-guide/index.es.html
+    ru: https://rogerdudler.github.io/git-guide/index.ru.html
+  limit-languages-to: description
+  categories:
+  - git
+  - syntax
+    
+starthardware:
+  title: Start Hardware
+  description:
+    de: Mikrocontroller sind kleine Computer, die man programmieren kann. Sie sind in fast allen technischen Geräten eingebaut. Man findet sie in Spielzeugen, Mikrowellenherden, Handys, Robotern, Autos und Raumschiffen. Hier erfährst du, wie du sie selbst programmieren kannst. Von blinkenden LEDs bis zum elektronischen Haustier tauchst du ein in die spannende Welt der Hardware. 
+  url: http://starthardware.org/
+  categories:
+  - arduino
+  - syntax
+  
+funduino:
+  title: Funduino
+  description:
+    de: Diese Anleitung soll als Grundlage zum Erlernen der Arduino-Plattform dienen. Sie soll Anfängern einen einfachen, interessanten und eng geleiteten Einstieg in die Arduino-Thematik geben.
+  url: http://funduino.de/vorwort
+  categories:
+  - arduino
+  - syntax
+
+
+
+
+
+
