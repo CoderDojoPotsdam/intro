@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 from flask import Flask, send_from_directory, request, make_response, redirect
 from concurrent.futures import ThreadPoolExecutor
