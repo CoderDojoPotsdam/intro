@@ -5,13 +5,13 @@ If it does not appear here, [please create an issue and ask][new-issue] or join 
 
 - Here, you can find guidance on how to change the content.
   - [In the Overview Section][overview-pages], you can read about how to
-    customize this overview for your needs and create a new page.
+    customize this overview for your needs and create a new page for your programming event.
 - [The Development Guide][dev-guide] guides you through setup and contribution,
   teaching all you need to know.
 - [In the Branches.md file][branches], you find a descriptive overview about the
   structure of this repository.
 
-## How to create add a tutorial
+## How to add a new tutorial
 
 If you want to add a tutorial to the page, you can [edit][edit-tutorials] the [tutorials.yml][tutorials] file.
 Each tutorial must have the following attributes:
@@ -80,7 +80,7 @@ the languages of the `title`, `descrition` or `url`:
     limit-languages-to: description
   ```
 
-## How to transtlate
+## How to translate
 
 If you like to translate a tutorial to different languages,
 first, check that your language is in the [list of languages][languages]. If not, add it.
