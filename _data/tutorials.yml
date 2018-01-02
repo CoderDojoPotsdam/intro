@@ -368,6 +368,125 @@ funduino:
   - arduino
   - syntax
 
+ardublocks-infosphere:
+  title: Ardublocks
+  description:
+    de: Programmiere den Arduino mit Blöcken, steuere LEDs und andere Bauteile an.
+  url: http://schuelerlabor.informatik.rwth-aachen.de/modulmaterialien/ardublock
+  links:
+  - name: Download & Installation
+    url: http://schuelerlabor.informatik.rwth-aachen.de/sites/default/files/dokumente/Installationsanleitung-Arduino%2BArduBlock_0.pdf
+  categories:
+  - arduino
+  - blocks
+
+go-tour:
+  title: Go-Tour
+  description:
+    de: Willkommen zu einer Einführungstour in die Programmiersprache Go. 
+    en: Welcome to a tour of the Go programming language. 
+    es: Bienvenido al tour por el lenguaje de programación Go. 
+  url: https://go-tour-de.appspot.com/welcome/2
+  categories:
+  - go
+  - syntax
+
+try-ruby:
+  title: Try Ruby
+  description: Got 15 minutes? Give Ruby a shot right now!
+  url: http://tryruby.org
+  categories:
+  - ruby
+  - syntax
+
+regex-tutorial:
+  title: 
+    de: Reguläre Ausdrücke
+    en: Regular Expressions
+  description:
+    de: Mit regulären Ausdrücken kannst du Texte durchsuchen. Ein regulärer Ausdruck ist ein Muster, das in einem Text gefunden werden soll. In vielen Programmiersprachen kannst du reguläre Ausdrücke verwenden, um Zeichenketten zu durchsuchen. Man kann mit regulären Ausdrücken auch testen, ob die Eingabe von Programmen korrekt ist und ob Nutzer sich vertippen. 
+    en: With regular expressions, you can search through texts. A regular expression is a pattern you want to find in the text. In many programming languages, programmers use regular expressions to search through text, test if the input of a program is correct, and check if the users made mistakes. 
+  url: https://coderdojopotsdam.github.io/regex-tutorial/
+  limit-languages-to: description
+  categories:
+  - regular-expressions
+  - syntax
+
+arduino-tutorial:
+  title: Arduino-Tutorial
+  description:
+    de: Einführung in Arduino, in sechs einfachen Schritten loslegen.
+  url: http://www.arduino-tutorial.de/
+  limit-languages-to: description
+  categories:
+  - arduino
+  - syntax
+
+the-hitchhikers-guide-to-python:
+  title:
+    en: The Hitchhiker’s Guide to Python!
+    fr: Le guide de l’auto-stoppeur pour Python!
+    zh: Python最佳实践指南！
+    ja: Python ヒッチハイク・ガイド
+    ko: 파이썬을 여행하는 히치하이커를 위한 안내서!
+    pt-br: O Guia do Mochileiro para Python!
+  description:
+    en: This handcrafted guide exists to provide both novice and expert Python developers a best practice handbook to the installation, configuration, and usage of Python on a daily basis.
+    fr: Ce guide artisanal existe pour fournir aux développeurs novices comme experts un manuel des meilleurs pratiques pour l’installation, la configuration et l’usage de Python au quotidien.
+    zh: 这份人工编写的指南旨在为Python初学者和专家提供一个 关于Python安装、配置、和日常使用的最佳实践手册。
+    ja: この手作りガイドは、初心者と熟練者のPython開発者の両方に、Python のインストール、設定、および使用に関するベスト・プラクティスを日々提供するために存在します。
+    ko: 이 장인정신으로 만든 안내서는 파이썬 초보자와 숙련된 파이썬 개발자 모두에게 매일매일 단위로 파이썬의 설치, 설정, 사용을 안내하는 모범 사례 안내서입니다.
+    pt-br: Esse guia feito à mão existe para prover um manual de boas maneiras sobre instalação, configuração e uso de Python no dia-a-dia para novos e experientes usuários.
+  url:
+    en: https://docs.python-guide.org/
+    fr: https://python-guide-fr.readthedocs.io
+    zh: https://pythonguidecn.readthedocs.io/zh/latest/
+    ja: http://python-guideja.readthedocs.io/ja/latest/
+    ko: https://python-guide-kr.readthedocs.io/ko/latest/
+    pt-br: http://python-guide-pt-br.readthedocs.io/pt_BR/latest/
+  limit-languages-to: description
+  categories:
+  - python
+  - syntax
+
+project-euler:
+  title: Project Euler
+  description: Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve. Although mathematics will help you arrive at elegant and efficient methods, the use of a computer and programming skills will be required to solve most problems.
+  url: https://projecteuler.net/
+  categories:
+  - syntax
+
+cyber-dojo:
+  title: Cyber Dojo
+  description: The place teams practice programming - setup a challenge and solve it together.
+  url: http://cyber-dojo.org/
+  categories:
+  - syntax
+
+check-io:
+  title: Check-IO
+  description: Coding game where you can improve your solutions or conquer the universe.
+  url: https://checkio.org/
+  categories:
+  - syntax
+  - python
+  - javascript
+
+pymove3d:
+  title: Python & Blender
+  description:
+    de: Was immer Dich hierher geführt hat, Du findest hier Material zur Programmiersprache »Python« und dem 3D-Programm »Blender«. Darüber hinaus möchten wir Anregungen für den Einsatz der Software in der Schule und in der Freizeit geben.
+    en: Whatever your motivations are, here you will find information about Python and 3D modelling program Blender, but also new ideas how to use computers and software at school or just for fun.
+    nl: Wat je motivatie ook mag zijn, hier zul je informatie vinden over Python en het 3D programma Blender. Daarnaast zul je nieuwe ideeën krijgen over hoe je een computer en software kunt gebruiken op school of gewoon voor de lol.
+  url:
+    de: http://pymove3d.sudile.com/de/stories/python/
+    en: http://pymove3d.sudile.com/stories/python/
+    nl: http://pymove3d.sudile.com/nl/stories/python/
+  limit-languages-to: description
+  categories:
+  - python
+  - syntax
+  - 3d
 
 
 
