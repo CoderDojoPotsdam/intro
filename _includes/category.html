@@ -1,12 +1,12 @@
-<div class="category grid-whole equalize">
+<div class="col s12 category grid-whole equalize">
   {%- assign category_id = include.structure.id -%}
   {%- assign category = site.data.categories[category_id] %}
   <div class="heading">
-    <h2>
+    <h3>
       {%- include translate text=category.name language=include.language -%}
-    </h2>
+    </h3>
   </div>
-  <div class="description">
+  <div class="category-description">
     {%- include translate text=category.description language=include.language %}
   </div>
   {%- if include.structure.structure %}

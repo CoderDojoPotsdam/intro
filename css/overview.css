@@ -8,6 +8,59 @@ header .page-logo {
   vertical-align: middle;
 }
 
+#nav-mobile {
+  margin-right: 20px;
+}
+
+/*******************************************************
+ * Typography
+ */
+
+#description {
+  margin: 60px 0px;
+}
+
+.category-description {
+  font-size: 18px;
+  margin: 10px 0px;
+}
+
+/*******************************************************
+ * colors
+ */
+
+.orange {
+  background-color: #FAA31A !important;
+}
+
+.purple {
+  background-color: #73449B !important;
+}
+
+.green {
+  background-color: #49B749 !important;
+}
+
+.blue {
+  background-color: #0093D5 !important;
+}
+
+.red {
+  background-color: #9B1C20 !important;
+}
+
+.black {
+  background-color: #000000 !important;
+}
+
+.white {
+  background-color: #FFFFFF !important;
+}
+
+.red-text {
+  color: #9B1C20 !important;
+}
+
 /*******************************************************
  * footer
  */
