@@ -22,7 +22,7 @@
   <body>
     <header>
       <nav>
-        <div class="nav-wrapper">
+        <div class="nav-wrapper blue">
           <a href="{{ page.homepage }}" class="brand-logo">
             <img class="page-logo" src="{{ page.image | escape }}"/>{{ page.title | escape }}
           </a>
@@ -43,7 +43,7 @@
       <div id="structure">
         {%- for language in site.data.languages -%}
           <div class="show-language show-language-{{ language.id | escape }}" id="section-{{ language.id | escape }}">
-            <div class="show-language-heading">{{ language.name | escape }}</div>
+            <h1 class="show-language-heading">{{ language.name | escape }}</div>
             {% include structure.html structure=page.structure language=language %}
           </div>
         {%- endfor %}

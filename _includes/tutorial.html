@@ -2,10 +2,10 @@
 {%- assign tutorial = site.data.tutorials[tutorial_id] %}
 {%- if tutorial["limit-languages-to"] == null or tutorial[tutorial["limit-languages-to"]] contains include.language.id -%}
 <div class="tutorial col s12 m6 l4">
-  <div class="card small blue-grey darken-1">
+  <div class="card small green">
     <div class="card-content white-text">
       <span class="card-title">
-        <a href="{% include translate text=tutorial.url language=include.language %}">
+        <a class="white-text" href="{% include translate text=tutorial.url language=include.language %}">
           {%- include translate text=tutorial.title language=include.language -%}
         </a>
       </span>
