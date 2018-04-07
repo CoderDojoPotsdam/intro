@@ -369,7 +369,15 @@ funduino:
   - syntax
 
 
-
+sonic-pi:
+  title: Sonic Pi
+  description:
+    en: Learn to code creatively by composing or performing music in an incredible range of styles from Classical & Jazz to Grime & EDM.
+    de: Lerne kreativ Programmieren indem Du Musik komponierst und dazu verschiedene Stile von Klassik, Jazz, Grime und EDM benutzt.
+  url: http://sonic-pi.net/
+  categories:
+  - ruby
+  - music
 
 
 
