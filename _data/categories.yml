@@ -31,7 +31,14 @@ python:
   description:
     de: Python is eine Allzweckprogramiersprache.
     en: Python is an all purpose programming language.
-    es: Python es un potente lenguaje de programación que se puede usar para muchas cosas
+    es: Python es un potente lenguaje de programación que se puede usar para muchas cosas.
+ruby:
+  name: Ruby
+  url: https://www.ruby-lang.org
+  description:
+    de: Ruby is eine Allzweckprogramiersprache.
+    en: Ruby is an all purpose programming language.
+    es: Ruby es un potente lenguaje de programación que se puede usar para muchas cosas.
 javascript:
   name: JavaScript
   url: https://www.javascript.com/
