@@ -290,6 +290,17 @@ building-out-webpages-opentechschool:
   - websites
   - syntax
 
+php-einfach:
+  title: 
+    de: Webseiten bauen mit PHP
+  description:
+    de: Wenn Ihr PHP lernen wollt, dann empfehle ich euch dieses PHP Tutorial. In diesem PHP Tutorial werden auf die wichtigsten Grundlagen eingegangen, so dass ihr am Schluss selbständig PHP Scripts programmieren könnt.  
+  url: https://www.php-einfach.de/php-tutorial/
+  categories:
+  - websites
+  - syntax
+  - PHP
+  
 css-classes:
   title: CSS-Classes
   description:
