@@ -111,6 +111,14 @@ code.org:
   url: https://code.org/learn
   categories:
   - blocks
+  
+  scratch-maus:
+  title: Programmieren mit der Maus
+  description:
+    de: Programmiere mit der Maus aus der Wissenssendung "Sendung mit der Maus" des WDR
+  url: https://programmieren.wdrmaus.de/
+  categories:
+  - blocks
 
 snap:
   title: Snap
