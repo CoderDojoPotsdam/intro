@@ -150,6 +150,16 @@ appinventor:
   categories:
   - blocks
 
+paper-io-bot:
+  title: Paper-IO-Bot
+  description:
+    de: Programmiere einen Bot für das Spiel Paper.io.
+    en: Program your own bot for the game Paper.io.
+  url: https://niccokunzmann.github.io/paper-io-bot/
+  links:
+  categories:
+  - blocks
+
 codecombat:
   title: Code Combat
   description:
