@@ -423,7 +423,7 @@ go-tour:
 try-ruby:
   title: Try Ruby
   description: Got 15 minutes? Give Ruby a shot right now!
-  url: http://tryruby.org
+  url: https://ruby.github.io/TryRuby/
   categories:
   - ruby
   - syntax
